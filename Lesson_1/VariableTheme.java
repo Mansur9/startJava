@@ -113,5 +113,11 @@ public class VariableTheme {
         System.out.println(hundreds); 
         System.out.println(dozens);
         System.out.println(units);
+
+        int secs = 86399;
+        int hour = secs / 3600;
+        int min = secs / 60 % 60;
+        int sec = secs / 1 % 60;
+        System.out.println(hour+":"+min+":"+sec);
     }
 }   
