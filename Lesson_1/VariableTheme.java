@@ -17,7 +17,7 @@ public class VariableTheme {
         // Расчет стоимости товара со скидкой
         int x = 100;
         int y = 200;
-        float skidka = 0.1f;
+        float skidka = 0.11f;
         float z = (x + y) * skidka; //размер скидки
         float sumItogSoSkid = x + y - z;
         System.out.print("сумма скидки = " + z + "\n");
@@ -71,5 +71,38 @@ public class VariableTheme {
         int sum = 3 + 4 + 5;
         System.out.println("Произведение = " + proiz);
         System.out.println("Сумма = " + sum);
+
+        //Вывод на консоль ASCII-арт Дюка
+        char x1 = 47;
+        char x2 = 92;
+        char x3 = 95;
+        char x4 = 40;
+        char x5 = 41;
+        String prob1 = "  ";
+        String probel2 = "   ";
+        String probel = "    ";
+        String probel0 = " ";
+        String probel3 = "  ";
+        String probel4 = "      ";
+        System.out.print(probel+x1);
+        System.out.println(x2);
+        System.out.println(probel2+x1+prob1+x2);
+        System.out.print(probel3+x1);
+        System.out.print(x3);
+        System.out.print(x4);
+        System.out.print(probel0);
+        System.out.print(x5);
+        System.out.println(x2);
+        System.out.println(probel0+x1+probel4+x2);
+        System.out.print(x1);
+        System.out.print(x3);
+        System.out.print(x3);
+        System.out.print(x3);
+        System.out.print(x3);
+        System.out.print(x1);
+        System.out.print(x2);
+        System.out.print(x3);
+        System.out.print(x3);
+        System.out.println(x2);
     }
 }   
