@@ -104,5 +104,14 @@ public class VariableTheme {
         System.out.print(x3);
         System.out.print(x3);
         System.out.println(x2);
+  
+        // Отображение количества сотен, десятков и единиц числа
+        double item = 123;
+        int hundreds = (int)(item/100)%10; //сотни - получаем одну ед сотен
+        double dozens = (int)(item/10)%10; //десятки - используется две десятки
+        double units = item %10; //единицы - всего три единицы
+        System.out.println(hundreds); 
+        System.out.println(dozens);
+        System.out.println(units);
     }
 }   
