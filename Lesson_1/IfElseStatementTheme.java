@@ -23,13 +23,14 @@ public class IfElseStatementTheme {
         }
         
         
-        // String name = "Man".charAt(0);
-        // if(name == 'M') {
-        //     System.out.println("МММММММ");
-        // } if else (name == 'I') {
-        //     System.out.println("МММММММ");
-        // } else {
-        //     System.out.println("МММММММ");
-        // }
+        char c = "Mansur".charAt(0);
+        if(c == 'M') {
+            System.out.println("откройте букмы М");
+        } else if (c == 'a') {
+            System.out.println("откройте букву I");
+        } else {
+            System.out.println("Не позет в карты, повезет в любви!");
+        }
+        System.out.println(c);
     }
 }

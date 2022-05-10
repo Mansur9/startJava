@@ -100,7 +100,7 @@ public class VariableTheme {
         System.out.println(units);
 
         //Преобразование секунд
-        System.out.println("Преобразование секунд");
+        System.out.println("*Преобразование секунд*");
         int srcSeconds = 86399;
         int hour = srcSeconds / 3600;
         int min = srcSeconds / 60 % 60;
