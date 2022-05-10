@@ -11,7 +11,7 @@ public class IfElseStatementTheme {
         } else {
             System.out.println("Молод");
         }
-        
+
         if (!man) {
             System.out.println("Баба");
         } else {
@@ -23,7 +23,6 @@ public class IfElseStatementTheme {
         } else {
             System.out.println("Гуливер");
         }
-        
         
         char c = "Mansur".charAt(0);
         if(c == 'M') {
