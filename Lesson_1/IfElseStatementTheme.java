@@ -1,5 +1,7 @@
 public class IfElseStatementTheme {
     public static void main(String[] args) {
+        //Перевод псевдокода на язык Java
+        System.out.println("Перевод псевдокода на язык Java - это название задачи");
         int item = 28;
         int height = 178;
         Boolean man = true;
