@@ -3,24 +3,24 @@ public class VariableTheme {
         // Создание переменных и вывод их значений на консоль 
         System.out.println("*Создание переменных и вывод их значений на консоль*");
         byte graphics = 10;
-        short hd = 120;
-        long ddr = 4l;
-        float wifi = 2.4f;
-        double amd = 5500d;
-        char sign = 's';
-        int model = 10;
+        short hdMemory = 120;
+        long ramMemory = 4l;
+        float wifiFrequency = 2.4f;
+        double videoCardsAmdSeria = 5500d;
+        char videoCardsAmdSign = 's';
+        int videoCardsAmdModel = 10;
         boolean goodNotebook = true;
-        System.out.println("Byte = " + graphics + "\n" + "Short = "+ hd + "\n" + "Long = " + ddr + "\n" + "Float = " + wifi + "\n" + "Double = " + amd + "\n" + "char = " + sign + "\n" + "int = " + model );
+        System.out.println("Byte = " + graphics + "\n" + "Short = "+ hdMemory + "\n" + "Long = " + ramMemory + "\n" + "Float = " + wifiFrequency + "\n" + "Double = " + videoCardsAmdSeria + "\n" + "char = " + videoCardsAmdSign + "\n" + "int = " + videoCardsAmdModel );
         System.out.println(goodNotebook);
 
         // Расчет стоимости товара со скидкой
         System.out.println("*Расчет стоимости товара со скидкой*");
-        int xMin = 100;
-        int xMax = 200;
+        int priceGoodsX = 100;
+        int priceGoodsY = 200;
         double skidka = 0.11f;
-        double sale = (xMin + xMax) * skidka; //размер скидки
-        double finishSale = xMin + xMax - sale;
-        System.out.println("сумма скидки = " + sale);
+        double discount = (priceGoodsX + priceGoodsY) * skidka; //размер скидки
+        double finishSale = priceGoodsX + priceGoodsY - discount;
+        System.out.println("сумма скидки = " + discount);
         System.out.println("итогова сумма товаров со скидкой = " + finishSale);
 
         // Вывод на консоль слова JAVA
@@ -32,14 +32,31 @@ public class VariableTheme {
 
         //Отображение min и max значений числовых типов данных 
         System.out.println("*Отображение min и max значений числовых типов данных*");
-        System.out.println("Long.MIN_VALUE = " + Long.MIN_VALUE);
-        System.out.println("Long.MAX_VALUE = " + Long.MAX_VALUE);
-        System.out.println("Byte.MIN_VALUE = " + Byte.MIN_VALUE);
-        System.out.println("Byte.MAX_VALUE = " + Byte.MAX_VALUE);
-        System.out.println("Integer.MAX_VALUE = " + Integer.MAX_VALUE);
-        System.out.println("Integer.MIX_VALUE = " + Integer.MIN_VALUE);
-        System.out.println("Short.MAX_VALUE = " + Short.MAX_VALUE);
-        System.out.println("Short.MIN_VALUE = " + Short.MIN_VALUE);
+        long saveLong = Long.MAX_VALUE;
+        System.out.println("Long.MIN_VALUE = " + saveLong);
+        saveLong++;
+        System.out.println("Long.MIN_VALUE = " + saveLong);
+        saveLong--;
+        System.out.println("Long.MIN_VALUE = " + saveLong);
+        byte saveByte = Byte.MAX_VALUE;
+        System.out.println("Byte.MAX_VALUE = " + saveByte);
+        saveByte ++;
+        System.out.println("Byte.MAX_VALUE = " + saveByte);
+        saveByte --;
+        System.out.println("Byte.MAX_VALUE = " + saveByte);
+        int saveInteger = Integer.MAX_VALUE;
+        System.out.println("Integer.MAX_VALUE = " + saveInteger);
+        saveInteger ++;
+        System.out.println("Integer.MAX_VALUE = " + saveInteger);
+        saveInteger --;
+        System.out.println("Integer.MAX_VALUE = " + saveInteger);
+        short saveShort = Short.MAX_VALUE;
+        System.out.println("Short.MAX_VALUE = " + saveShort);
+        saveShort ++;
+        System.out.println("Short.MAX_VALUE = " + saveShort);
+        saveShort --;
+        System.out.println("Short.MAX_VALUE = " + saveShort);
+
 
         // Перестановка значений переменных
         System.out.println("*Перестановка значений переменных*");
@@ -92,9 +109,9 @@ public class VariableTheme {
         // Отображение количества сотен, десятков и единиц числа
         System.out.println("*Отображение количества сотен, десятков и единиц числа*");
         double item = 123;
-        int hundreds = (int)(item/100)%10; //сотни - получаем одну ед сотен
-        double dozens = (int)(item/10)%10; //десятки - используется две десятки
-        double units = item %10; //единицы - всего три единицы
+        int hundreds = (int)(item / 100) % 10; //сотни - получаем одну ед сотен
+        double dozens = (int)(item / 10) % 10; //десятки - используется две десятки
+        double units = item % 10; //единицы - всего три единицы
         System.out.println(hundreds); 
         System.out.println(dozens);
         System.out.println(units);
@@ -105,6 +122,6 @@ public class VariableTheme {
         int hour = srcSeconds / 3600;
         int min = srcSeconds / 60 % 60;
         int sec = srcSeconds / 1 % 60;
-        System.out.println(hour+":"+min+":"+sec);
+        System.out.println(hour + " : " + min + " : " + sec);
     }
 }   
