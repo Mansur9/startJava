@@ -64,7 +64,25 @@ public class VariableTheme {
         float number2 = 5f;
         System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
         float buffer = number2;
-        System.out.println("buffer = " + buffer + "\n" + "number1 = " + number1);
+        number2 = number1;
+        System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
+        number2 = buffer; 
+        System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
+        number1 = number1 + number2;
+        System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
+        number2 = number1 - number2;
+        System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
+        number1 = number1 - number2;
+        System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
+        int numberBit_a = 7;
+        int numberBit_b = 5;
+        System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
+        numberBit_a = numberBit_a ^ numberBit_b;
+        System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
+        numberBit_b = numberBit_a ^ numberBit_b;
+        System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
+        numberBit_a = numberBit_a ^ numberBit_b;
+        System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
 
         // Вывод ASCII-символов и их кодов
         System.out.println("*Вывод ASCII-символов и их кодов*");
