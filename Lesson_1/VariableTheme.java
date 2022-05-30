@@ -99,16 +99,17 @@ public class VariableTheme {
 
         //Произведение и сумма цифр числа
         System.out.println("*Произведение и сумма цифр числа*");
-        int nuberPro1 = 3;
-        int nuberPro2 = 4;
-        int nuberPro3 = 5;
-        int proiz = nuberPro1 * nuberPro2 * nuberPro3;
-        int nuberForSum1 = 3;
-        int nuberForSum2 = 4;
-        int nuberForSum3 = 5;
-        int sum = nuberForSum1 + nuberForSum2 + nuberForSum3;
-        System.out.println("Произведение = " + proiz);
-        System.out.println("Сумма = " + sum);
+        int itemAll = 345;
+        int itemOne = itemAll/100;
+        System.out.println(itemOne);
+        int itemTwo = (itemAll/10)%10; // 
+        System.out.println(itemTwo);
+        int itemThree = (itemAll / 1) % 10;
+        System.out.println(itemThree);
+        int itemProiz = itemOne * itemTwo * itemThree;
+        System.out.println("Произведение = " + itemProiz);
+        int itemSum = itemOne + itemTwo + itemThree;
+        System.out.println("Сумма = " + itemSum);
 
         //Вывод на консоль ASCII-арт Дюка
         System.out.println("*Вывод на консоль ASCII-арт Дюка*");
