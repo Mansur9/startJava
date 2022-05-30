@@ -57,7 +57,6 @@ public class VariableTheme {
         saveShort --;
         System.out.println("Short.MAX_VALUE = " + saveShort);
 
-
         // Перестановка значений переменных
         System.out.println("*Перестановка значений переменных*");
         float number1 = 4f;
