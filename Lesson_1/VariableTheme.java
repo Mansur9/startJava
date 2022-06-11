@@ -2,15 +2,18 @@ public class VariableTheme {
     public static void main(String[] args) {
         // Создание переменных и вывод их значений на консоль 
         System.out.println("*Создание переменных и вывод их значений на консоль*");
-        byte graphics = 10;
-        short hdMemory = 120;
-        long ramMemory = 4l;
+        byte graphicSizeGB = 10;
+        short hdSizeGB = 120;
+        long ramSizeGb = 4l;
         float wifiFrequency = 2.4f;
-        double videoCardsAmdSeria = 5500d;
-        char videoCardsAmdSign = 's';
-        int videoCardsAmdModel = 10;
+        double videoCardAmdSeria = 5500d;
+        char videoCardAmdSign = 's';
+        int videoCardAmdModel = 10;
         boolean goodNotebook = true;
-        System.out.println("Byte = " + graphics + "\n" + "Short = "+ hdMemory + "\n" + "Long = " + ramMemory + "\n" + "Float = " + wifiFrequency + "\n" + "Double = " + videoCardsAmdSeria + "\n" + "char = " + videoCardsAmdSign + "\n" + "int = " + videoCardsAmdModel );
+        System.out.println("Byte = " + graphicSizeGB + "\n" + "Short = "+ 
+        hdSizeGB + "\n" + "Long = " + ramSizeGb + "\n" + "Float = " + wifiFrequency + "\n" + 
+        "Double = " + videoCardAmdSeria + "\n" + "char = " + videoCardAmdSign + 
+        "\n" + "int = " + videoCardAmdModel );
         System.out.println(goodNotebook);
 
         // Расчет стоимости товара со скидкой
@@ -90,20 +93,25 @@ public class VariableTheme {
         char codeChar3 = 64;
         char codeChar4 = 94;
         char codeChar5 = 95;
+        System.out.print((int)(codeChar1) + " ");
         System.out.println(codeChar1);
+        System.out.print((int)(codeChar2) + " ");
         System.out.println(codeChar2);
+        System.out.print((int)(codeChar3) + " ");
         System.out.println(codeChar3);
+        System.out.print((int)(codeChar4) + " ");
         System.out.println(codeChar4);
+        System.out.print((int)(codeChar5) + " ");
         System.out.println(codeChar5);
 
         //Произведение и сумма цифр числа
         System.out.println("*Произведение и сумма цифр числа*");
-        int itemAll = 345;
-        int itemOne = itemAll/100;
+        int srcNum = 345;
+        int itemOne = srcNum/100;
         System.out.println(itemOne);
-        int itemTwo = (itemAll/10)%10; // 
+        int itemTwo = (srcNum/10)%10; // 
         System.out.println(itemTwo);
-        int itemThree = (itemAll / 1) % 10;
+        int itemThree = (srcNum / 1) % 10;
         System.out.println(itemThree);
         int itemProiz = itemOne * itemTwo * itemThree;
         System.out.println("Произведение = " + itemProiz);
@@ -112,24 +120,26 @@ public class VariableTheme {
 
         //Вывод на консоль ASCII-арт Дюка
         System.out.println("*Вывод на консоль ASCII-арт Дюка*");
-        char slashPr = 47;
-        char slashObr = 92;
+        char slash = 47;
+        char backslash = 92;
         char underlining = 95;
-        char bracket = 40;
-        char bracketBack = 41;
-        String probel = " ";
-        System.out.println(probel.repeat( 4 ) + slashPr + slashObr + probel.repeat( 4 ));
-        System.out.println(probel.repeat( 3 ) + slashPr + probel.repeat( 2 ) + slashObr + probel.repeat( 3 ));
-        System.out.println(probel.repeat( 2 ) + slashPr + underlining + bracket + probel + bracketBack + slashObr + probel.repeat( 2 ));
-        System.out.println(probel.repeat( 1 ) + slashPr + probel.repeat( 6 ) + slashObr + probel.repeat( 1 ));
-        System.out.println(probel.repeat( 0 ) + slashPr + underlining + underlining + underlining + underlining + slashPr + slashObr + underlining + underlining + slashObr + probel.repeat( 0 ));
+        char openBracket = 40;
+        char closeBracket = 41;
+        String space = " ";
+        System.out.println(space.repeat( 4 ) + slash + backslash + space.repeat( 4 ));
+        System.out.println(space.repeat( 3 ) + slash + space.repeat( 2 ) + backslash + space.repeat( 3 ));
+        System.out.println(space.repeat( 2 ) + slash + underlining + openBracket + space + closeBracket + backslash + 
+        space.repeat( 2 ));
+        System.out.println(space.repeat( 1 ) + slash + space.repeat( 6 ) + backslash + space.repeat( 1 ));
+        System.out.println(space.repeat( 0 ) + slash + underlining + underlining + underlining + underlining + 
+        slash + backslash + underlining + underlining + backslash + space.repeat( 0 ));
   
         // Отображение количества сотен, десятков и единиц числа
         System.out.println("*Отображение количества сотен, десятков и единиц числа*");
-        double item = 123;
-        int hundreds = (int)(item / 100) % 10; //сотни - получаем одну ед сотен
-        double dozens = (int)(item / 10) % 10; //десятки - используется две десятки
-        double units = item % 10; //единицы - всего три единицы
+        int item = 123;
+        int hundreds = (item / 100) % 10; //сотни - получаем одну ед сотен
+        int dozens = (item / 10) % 10; //десятки - используется две десятки
+        int units = item % 10; //единицы - всего три единицы
         System.out.println(hundreds); 
         System.out.println(dozens);
         System.out.println(units);
