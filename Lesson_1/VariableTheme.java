@@ -36,27 +36,27 @@ public class VariableTheme {
         //Отображение min и max значений числовых типов данных 
         System.out.println("*Отображение min и max значений числовых типов данных*");
         long saveLong = Long.MAX_VALUE;
-        System.out.println("Long.MIN_VALUE = " + saveLong);
+        System.out.println("Long.MAX_VALUE = " + saveLong);
         saveLong++;
         System.out.println("Long.MIN_VALUE = " + saveLong);
         saveLong--;
-        System.out.println("Long.MIN_VALUE = " + saveLong);
+        System.out.println("Long.MAX_VALUE = " + saveLong);
         byte saveByte = Byte.MAX_VALUE;
         System.out.println("Byte.MAX_VALUE = " + saveByte);
         saveByte ++;
-        System.out.println("Byte.MAX_VALUE = " + saveByte);
+        System.out.println("Byte.MIN_VALUE = " + saveByte);
         saveByte --;
         System.out.println("Byte.MAX_VALUE = " + saveByte);
         int saveInteger = Integer.MAX_VALUE;
         System.out.println("Integer.MAX_VALUE = " + saveInteger);
         saveInteger ++;
-        System.out.println("Integer.MAX_VALUE = " + saveInteger);
+        System.out.println("Integer.MIN_VALUE = " + saveInteger);
         saveInteger --;
         System.out.println("Integer.MAX_VALUE = " + saveInteger);
         short saveShort = Short.MAX_VALUE;
         System.out.println("Short.MAX_VALUE = " + saveShort);
         saveShort ++;
-        System.out.println("Short.MAX_VALUE = " + saveShort);
+        System.out.println("Short.MIN_VALUE = " + saveShort);
         saveShort --;
         System.out.println("Short.MAX_VALUE = " + saveShort);
 
