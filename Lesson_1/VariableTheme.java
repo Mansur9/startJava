@@ -15,7 +15,8 @@ public class VariableTheme {
         "Double = " + videoCardAmdSeria + "\n" + "char = " + videoCardAmdSign + 
         "\n" + "int = " + videoCardAmdModel );
         System.out.println(goodNotebook);
-
+        System.out.println();
+        
         // Расчет стоимости товара со скидкой
         System.out.println("*Расчет стоимости товара со скидкой*");
         int priceGoodsX = 100;
@@ -25,6 +26,7 @@ public class VariableTheme {
         double discountPrice = priceGoodsX + priceGoodsY - discount;
         System.out.println("сумма скидки = " + discountAmount);
         System.out.println("итогова сумма товаров со скидкой = " + discountPrice);
+        System.out.println();
 
         // Вывод на консоль слова JAVA
         System.out.println("*Вывод на консоль слова JAVA*");
@@ -32,33 +34,35 @@ public class VariableTheme {
         System.out.println("   J   a a  v   v  a a ");
         System.out.println("J  J  aaaaa  V V  aaaaa");
         System.out.println(" JJ  a     a  V  a     a");
+        System.out.println();
 
         //Отображение min и max значений числовых типов данных 
         System.out.println("*Отображение min и max значений числовых типов данных*");
-        long haveMaxLong = Long.MAX_VALUE;
-        System.out.println("Long.MAX_VALUE = " + haveMaxLong);
-        ++haveMaxLong;
-        System.out.println("Long.MIN_VALUE = " + haveMaxLong);
-        --haveMaxLong;
-        System.out.println("Long.MAX_VALUE = " + haveMaxLong);
-        byte haveMaxByte = Byte.MAX_VALUE;
-        System.out.println("Byte.MAX_VALUE = " + haveMaxByte);
-        ++ haveMaxByte;
-        System.out.println("Byte.MIN_VALUE = " + haveMaxByte);
-        -- haveMaxByte;
-        System.out.println("Byte.MAX_VALUE = " + haveMaxByte);
-        int haveMaxInteger = Integer.MAX_VALUE;
-        System.out.println("Integer.MAX_VALUE = " + haveMaxInteger);
-        ++ haveMaxInteger;
-        System.out.println("Integer.MIN_VALUE = " + haveMaxInteger);
-        -- haveMaxInteger;
-        System.out.println("Integer.MAX_VALUE = " + haveMaxInteger);
-        short haveMaxShort = Short.MAX_VALUE;
-        System.out.println("Short.MAX_VALUE = " + haveMaxShort);
-        ++ haveMaxShort;
-        System.out.println("Short.MIN_VALUE = " + haveMaxShort);
-        -- haveMaxShort;
-        System.out.println("Short.MAX_VALUE = " + haveMaxShort);
+        long MaxLong = Long.MAX_VALUE;
+        System.out.println("Long.MAX_VALUE = " + MaxLong);
+        ++MaxLong;
+        System.out.println("Long.MIN_VALUE = " + MaxLong);
+        --MaxLong;
+        System.out.println("Long.MAX_VALUE = " + MaxLong);
+        byte MaxByte = Byte.MAX_VALUE;
+        System.out.println("Byte.MAX_VALUE = " + MaxByte);
+        ++MaxByte;
+        System.out.println("Byte.MIN_VALUE = " + MaxByte);
+        --MaxByte;
+        System.out.println("Byte.MAX_VALUE = " + MaxByte);
+        int MaxInteger = Integer.MAX_VALUE;
+        System.out.println("Integer.MAX_VALUE = " + MaxInteger);
+        ++MaxInteger;
+        System.out.println("Integer.MIN_VALUE = " + MaxInteger);
+        --MaxInteger;
+        System.out.println("Integer.MAX_VALUE = " + MaxInteger);
+        short MaxShort = Short.MAX_VALUE;
+        System.out.println("Short.MAX_VALUE = " + MaxShort);
+        ++MaxShort;
+        System.out.println("Short.MIN_VALUE = " + MaxShort);
+        --MaxShort;
+        System.out.println("Short.MAX_VALUE = " + MaxShort);
+        System.out.println();
 
         // Перестановка значений переменных
         System.out.println("*Перестановка значений переменных*");
@@ -88,6 +92,7 @@ public class VariableTheme {
         System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
         numberBit_a = numberBit_a ^ numberBit_b;
         System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
+        System.out.println();
 
         // Вывод ASCII-символов и их кодов
         System.out.println("*Вывод ASCII-символов и их кодов*");
@@ -96,12 +101,12 @@ public class VariableTheme {
         char codeChar3 = 64;
         char codeChar4 = 94;
         char codeChar5 = 95;
-        System.out.println((int)codeChar1 + " " + codeChar1);
-        System.out.println((int)codeChar2 + " " + codeChar2);
-        System.out.println((int)codeChar3 + " " + codeChar3);        
-        System.out.println((int)codeChar4 + " " + codeChar4);
-        System.out.println((int)codeChar5 + " " + codeChar5);
-        
+        System.out.println((int) codeChar1 + " " + codeChar1);
+        System.out.println((int) codeChar2 + " " + codeChar2);
+        System.out.println((int) codeChar3 + " " + codeChar3);        
+        System.out.println((int) codeChar4 + " " + codeChar4);
+        System.out.println((int) codeChar5 + " " + codeChar5);
+        System.out.println();
 
         //Произведение и сумма цифр числа
         System.out.println("*Произведение и сумма цифр числа*");
@@ -116,6 +121,7 @@ public class VariableTheme {
         System.out.println("произведение цифр числа " + srcNum + " = " + prodDigits);
         int sumDigits = digit1 + digit2 + digit3;
         System.out.println("сумма цифр числа " + srcNum + " = " + sumDigits);
+        System.out.println();
 
         //Вывод на консоль ASCII-арт Дюка
         System.out.println("*Вывод на консоль ASCII-арт Дюка*");
@@ -131,16 +137,19 @@ public class VariableTheme {
         System.out.println(space.repeat(1) + slash + space.repeat(6) + backslash + space.repeat(1));
         System.out.println(space.repeat(0) + slash + underlining + underlining + underlining + underlining + slash + backslash + underlining + 
                 underlining + backslash + space.repeat(0));
-  
+        System.out.println();
+
         // Отображение количества сотен, десятков и единиц числа
         System.out.println("*Отображение количества сотен, десятков и единиц числа*");
         int srcNumber = 123;
         int hundreds = (srcNumber / 100) % 10; //сотни - получаем одну ед сотен
         int dozens = (srcNumber / 10) % 10; //десятки - используется две десятки
         int ones = srcNumber % 10; //единицы - всего три единицы
-        System.out.println("X = " + hundreds); 
-        System.out.println("Y = " + dozens);
-        System.out.println("Z = " + ones);
+        System.out.println("Число " + srcNum + " содержит:");
+        System.out.println(hundreds + " сотен;"); 
+        System.out.println(dozens + " десяток;");
+        System.out.println(ones + " едениц.");
+        System.out.println();
 
         //Преобразование секунд
         System.out.println("*Преобразование секунд*");
