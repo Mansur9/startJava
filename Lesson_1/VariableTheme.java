@@ -1,3 +1,4 @@
+
 public class VariableTheme {
     public static void main(String[] args) {
         // Создание переменных и вывод их значений на консоль 
@@ -83,15 +84,15 @@ public class VariableTheme {
         number1 = number1 - number2;
         System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
         System.out.println("C помощью побитовой операции");
-        int numberBit_a = (int)number1;
-        int numberBit_b = (int)number2;
-        System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
-        numberBit_a = numberBit_a ^ numberBit_b;
-        System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
-        numberBit_b = numberBit_a ^ numberBit_b;
-        System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
-        numberBit_a = numberBit_a ^ numberBit_b;
-        System.out.println("numberBit_a = " + numberBit_a + "\n" + "numberBit_b = " + numberBit_b);
+        number1 = (int)number1;
+        number2 = (int)number2;
+        System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
+        number1 = (int)number1 ^ (int)number2;
+        System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
+        number2 = (int)number1 ^ (int)number2;
+        System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
+        number1 = (int)number1 ^ (int)number2;
+        System.out.println("number1 = " + number1 + "\n" + "number2 = " + number2);
         System.out.println();
 
         // Вывод ASCII-символов и их кодов
