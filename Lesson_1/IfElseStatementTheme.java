@@ -63,8 +63,9 @@ public class IfElseStatementTheme {
         // - отобразите полученные результаты
         int numberZero = 0;
         int numberAny = 222;
-        if (numberZero == 0 && (numberAny%2) == 0 && numberAny >= 0){ 
+        if (numberZero == 0) { 
             System.out.println("number zero = true");
+        } else if ((numberAny%2) == 0 && numberAny >= 0){ 
             System.out.println("Is is number even = " + numberAny);
             System.out.println("Is is number positive = " + numberAny);
         } else {
