@@ -6,7 +6,7 @@ public class IfElseStatementTheme {
         // - придумайте сообщения и отобразите в консоли 
         int age = 28;
         int height = 178;
-        boolean floor_man = true;
+        boolean floorMan = true;
         
         if (age > 20) {
             System.out.println("You are supper old");
@@ -14,7 +14,7 @@ public class IfElseStatementTheme {
             System.out.println("You're young");
         }
 
-        if (floor_man != true) {
+        if (floorMan != true) {
             System.out.println("You is girl");
         } 
         
