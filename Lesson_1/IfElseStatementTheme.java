@@ -1,7 +1,5 @@
-
 public class IfElseStatementTheme {
     public static void main(String[] args) {
-
         //Перевод псевдокода на язык Java
         // - перепишите псевдокод, приведенный ниже, с помощью Java
         // - используйте переменные, условные операторы, логическое НЕ
