@@ -6,7 +6,7 @@ public class IfElseStatementTheme {
         // - придумайте сообщения и отобразите в консоли 
         int age = 28;
         int height = 178;
-        boolean floorMan = true;
+        boolean maleGender = true;
         
         if (age > 20) {
             System.out.println("You are supper old");
@@ -14,7 +14,7 @@ public class IfElseStatementTheme {
             System.out.println("You're young");
         }
 
-        if (floorMan != true) {
+        if (!maleGender) {
             System.out.println("You is girl");
         } 
         
@@ -24,16 +24,16 @@ public class IfElseStatementTheme {
             System.out.println("You have height > 180");
         }
 
-        char item = "Mango".charAt(0);
-        if(item == 'M') {
+        char letterFirst = "Mango".charAt(0);
+        if(letterFirst == 'M') {
             System.out.println("open is letter - М");
-        } else if (item == 'I') {
+        } else if (letterFirst == 'I') {
             System.out.println("open is letter - I");
         } else {
             System.out.println("you don't luck man!");
         }
-        System.out.println(item);
-        System.out.println();
+        System.out.println(letterFirst + "\n");
+        
 
         //Поиск max и min числа
         // - создайте две переменные, присвоив им любые числа
@@ -42,13 +42,8 @@ public class IfElseStatementTheme {
         System.out.println("search the max and min numbers ");
         int number1 = 23;
         int number2 = 30;
-        if (number1 > number2) {
-            System.out.println("It is min number1 = " + number1);
-        }
-        if (number1 < number2) {
-            System.out.println("It is max number2 = " + number2);
-        }
-        System.out.println("max number = " + number2 + "\n" + "min number = " + number1);
+        System.out.println("max number = " + Math.max(number1,number2));
+        System.out.println("min number = " + Math.min(number1,number2));
         System.out.println();
 
         // Работа с числом
