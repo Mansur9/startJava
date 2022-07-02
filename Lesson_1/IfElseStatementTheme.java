@@ -42,6 +42,12 @@ public class IfElseStatementTheme {
         System.out.println("search the max and min numbers ");
         int number1 = 23;
         int number2 = 30;
+        
+        if (number1 > number2) {
+            System.out.println("number1 > number2");
+        } else {
+            System.out.println("number1 < number2");
+        }
         System.out.println("max number = " + Math.max(number1,number2));
         System.out.println("min number = " + Math.min(number1,number2));
         System.out.println();
