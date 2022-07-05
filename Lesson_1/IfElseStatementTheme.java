@@ -60,15 +60,18 @@ public class IfElseStatementTheme {
                 // - отрицательным (положительным)
         // - если число равно 0, то остальные проверки не должны осуществляться
         // - отобразите полученные результаты
-        int numberZero = 0;
-        int numberAny = 222;
-        if (numberZero == 0) { 
-            System.out.println("number zero = true");
-        } else if ((numberAny%2) == 0 && numberAny >= 0){ 
-            System.out.println("Is is number even = " + numberAny);
-            System.out.println("Is is number positive = " + numberAny);
-        } else {
-            System.out.println("!zero" + "odd" + " negative number");
-        }
+        int numberAny = -222;
+
+        if (numberAny == 0) { 
+            System.out.println("равен нулю");
+        } else if (numberAny > 0 && (numberAny % 2) == 0 ) {
+            System.out.println("положительное четно число");
+        } else if (numberAny < 0 && (numberAny % 2) == 0) {
+            System.out.println("отрицателньое четное число");
+        } else if (numberAny > 0 && (numberAny % 2) != 0 ) {
+            System.out.println("положительное нечетно число");
+        } else if (numberAny < 0 && (numberAny % 2) != 0) {
+            System.out.println("отрицателньое нечетное число");
+        } 
     }
 }
