@@ -44,12 +44,10 @@ public class IfElseStatementTheme {
         int number2 = 30;
         
         if (number1 > number2) {
-            System.out.println("number1 > number2");
+            System.out.println(number1 + " > " + number2);
         } else {
-            System.out.println("number1 < number2");
+            System.out.println(number1 + " < " + number2);
         }
-        System.out.println("max number = " + Math.max(number1,number2));
-        System.out.println("min number = " + Math.min(number1,number2));
         System.out.println();
 
         // Работа с числом
@@ -61,17 +59,19 @@ public class IfElseStatementTheme {
         // - если число равно 0, то остальные проверки не должны осуществляться
         // - отобразите полученные результаты
         int numberAny = -222;
-
-        if (numberAny == 0) { 
-            System.out.println("равен нулю");
-        } else if (numberAny > 0 && (numberAny % 2) == 0 ) {
-            System.out.println("положительное четно число");
-        } else if (numberAny < 0 && (numberAny % 2) == 0) {
-            System.out.println("отрицателньое четное число");
-        } else if (numberAny > 0 && (numberAny % 2) != 0 ) {
-            System.out.println("положительное нечетно число");
-        } else if (numberAny < 0 && (numberAny % 2) != 0) {
-            System.out.println("отрицателньое нечетное число");
-        } 
+        
+        if (numberAny != 0) { 
+            if (numberAny > 0) {
+                System.out.println("четно число");
+            } else {
+                System.out.println("нечетно число");
+            } if (numberAny > 0) {
+                System.out.println("положительное число");
+            } else {
+                System.out.println("отрицателньое число");
+            }
+        } else {
+            System.out.println("Равен нулю");
+        }
     }
 }
