@@ -146,7 +146,7 @@ public class VariableTheme {
         int hundreds = (srcNumber / 100) % 10; //сотни - получаем одну ед сотен
         int dozens = (srcNumber / 10) % 10; //десятки - используется две десятки
         int ones = srcNumber % 10; //единицы - всего три единицы
-        System.out.println("Число " + srcNum + " содержит:");
+        System.out.println("Число " + srcNumber + " содержит:");
         System.out.println(hundreds + " сотен;"); 
         System.out.println(dozens + " десяток;");
         System.out.println(ones + " едениц.");
