@@ -99,19 +99,31 @@ public class IfElseStatementTheme {
         System.out.println();
 
         if (hundreds != hundredsSecond) {
-            System.out.println("первое чсило не совпало");
+            System.out.println("первые чсило не совпали");
         } else {
-                System.out.println("первое число совпало");
+                System.out.println("первые числа совпали " + hundreds);
         }
         if (dozens != dozensSecond) {
-            System.out.println("второе число не совпало");
+            System.out.println("вторые число не совпали");
         } else {
-            System.out.println("второе число совпало");
+            System.out.println("вторые числа совпали " + dozens);
         }
         if (ones != onesSecond) {
-            System.out.println("третье число не совпали");
+            System.out.println("третьи числа не совпали");
         } else {
-            System.out.println("третье число совпало");
+            System.out.println("третьи число совпали" + ones);
         }
+        String intBitsHundreds = Integer.toBinaryString(hundreds);
+        System.out.println("Разряды числа: " + intBitsHundreds);
+        String intBitsDozens = Integer.toBinaryString(dozens);
+        System.out.println("Разряды числа: " + intBitsDozens);
+        String intBitsOnes = Integer.toBinaryString(ones);
+        System.out.println("Разряды числа: " + intBitsOnes);
+        String intBitsHundredsSecond = Integer.toBinaryString(hundredsSecond);
+        System.out.println("Разряды числа: " + intBitsHundredsSecond);
+        String intBitsDozensSecond = Integer.toBinaryString(dozensSecond);
+        System.out.println("Разряды числа: " + intBitsDozensSecond);
+        String intBitSonesSecond = Integer.toBinaryString(onesSecond);
+        System.out.println("Разряды числа: " + intBitSonesSecond);
     }
 }
