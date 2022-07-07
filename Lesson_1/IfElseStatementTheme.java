@@ -99,19 +99,19 @@ public class IfElseStatementTheme {
         System.out.println();
 
         if (hundreds != hundredsSecond) {
-            System.out.println("сотни не совпали");
+            System.out.println("первое чсило не совпало");
         } else {
-                System.out.println("совпали");
+                System.out.println("первое число совпало");
         }
         if (dozens != dozensSecond) {
-            System.out.println("сотни не совпали");
+            System.out.println("второе число не совпало");
         } else {
-            System.out.println("совпали");
+            System.out.println("второе число совпало");
         }
         if (ones != onesSecond) {
-            System.out.println("не совпали");
+            System.out.println("третье число не совпали");
         } else {
-            System.out.println("совпали");
+            System.out.println("третье число совпало");
         }
     }
 }
