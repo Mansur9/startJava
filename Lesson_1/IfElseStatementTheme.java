@@ -87,7 +87,7 @@ public class IfElseStatementTheme {
         System.out.println("Поиск одинаковых цифр в числах");
         int srcNumber = 123;
         int srcNumber2 =321;
-        int digitsHundreds = (srcNumber % 10; //сотни - получаем одну ед сотен
+        int digitsHundreds = srcNumber % 10; //сотни - получаем одну ед сотен
         System.out.println(digitsHundreds + " первое число;"); 
         int digitsDozens = (srcNumber / 10) % 10; //десятки - получаем десятки
         System.out.println(digitsDozens + " второе число");
@@ -104,29 +104,29 @@ public class IfElseStatementTheme {
         if (digitsHundreds != digitsHundredsSecond) {
             System.out.println("первые чсило не совпали");
         } else {
-                System.out.println("первые числа совпали " + hundreds);
+                System.out.println("первые числа совпали " + digitsHundreds);
         }
         if (digitsDozens != digitsDozensSecond) {
             System.out.println("вторые число не совпали");
         } else {
-            System.out.println("вторые числа совпали " + dozens);
+            System.out.println("вторые числа совпали " + digitsDozens);
         }
         if (digitsOnes != digitsOnesSecond) {
             System.out.println("третьи числа не совпали");
         } else {
-            System.out.println("третьи число совпали" + ones);
+            System.out.println("третьи число совпали" + digitsOnes);
         }
-        String intBitsHundreds = Integer.toBinaryString(hundreds);
+        String intBitsHundreds = Integer.toBinaryString(digitsHundreds);
         System.out.println("Разряды числа: " + intBitsHundreds);
-        String intBitsDozens = Integer.toBinaryString(dozens);
+        String intBitsDozens = Integer.toBinaryString(digitsDozens);
         System.out.println("Разряды числа: " + intBitsDozens);
-        String intBitsOnes = Integer.toBinaryString(ones);
+        String intBitsOnes = Integer.toBinaryString(digitsOnes);
         System.out.println("Разряды числа: " + intBitsOnes);
-        String intBitsHundredsSecond = Integer.toBinaryString(hundredsSecond);
+        String intBitsHundredsSecond = Integer.toBinaryString(digitsHundredsSecond);
         System.out.println("Разряды числа: " + intBitsHundredsSecond);
-        String intBitsDozensSecond = Integer.toBinaryString(dozensSecond);
+        String intBitsDozensSecond = Integer.toBinaryString(digitsDozensSecond);
         System.out.println("Разряды числа: " + intBitsDozensSecond);
-        String intBitSonesSecond = Integer.toBinaryString(onesSecond);
+        String intBitSonesSecond = Integer.toBinaryString(digitsOnesSecond);
         System.out.println("Разряды числа: " + intBitSonesSecond);
     }
 }
