@@ -86,7 +86,7 @@ public class IfElseStatementTheme {
         //  - номера разрядов
         System.out.println("Поиск одинаковых цифр в числах");
         int srcNumber = 123;
-        int srcNumber2 =321;
+        int srcNumber2 = 321;
         int digitsHundreds = srcNumber % 10; //сотни - получаем одну ед сотен
         System.out.println(digitsHundreds + " первое число;"); 
         int digitsDozens = (srcNumber / 10) % 10; //десятки - получаем десятки
@@ -102,7 +102,7 @@ public class IfElseStatementTheme {
         System.out.println();
 
         if (digitsHundreds != digitsHundredsSecond) {
-            System.out.println("первые чсило не совпали");
+            System.out.println("первые числа не совпали");
         } else {
                 System.out.println("первые числа совпали " + digitsHundreds);
         }
@@ -114,7 +114,7 @@ public class IfElseStatementTheme {
         if (digitsOnes != digitsOnesSecond) {
             System.out.println("третьи числа не совпали");
         } else {
-            System.out.println("третьи число совпали" + digitsOnes);
+            System.out.println("третьи числа совпали" + digitsOnes);
         }
         String intBitsHundreds = Integer.toBinaryString(digitsHundreds);
         System.out.println("Разряды числа: " + intBitsHundreds);
@@ -127,6 +127,23 @@ public class IfElseStatementTheme {
         String intBitsDozensSecond = Integer.toBinaryString(digitsDozensSecond);
         System.out.println("Разряды числа: " + intBitsDozensSecond);
         String intBitSonesSecond = Integer.toBinaryString(digitsOnesSecond);
-        System.out.println("Разряды числа: " + intBitSonesSecond);
+        System.out.println("Разряды числа: " + intBitSonesSecond + "\n");
+
+        // Определение буквы, числа или символа по их коду
+        // создайте переменную типа char
+        // присвойте ей значение ‘\u0057’
+        // определите — это код буквы, числа или другого символа
+        // использовать для этого методы классов Java запрещено!
+        // выведите в консоль сам символ и информацию о нем:
+        // маленькая (большая) буква
+        // это число
+        // не буква и не число
+        System.out.println("Определение буквы, числа или символа по их коду");
+        String symbol = '\u0057';
+        char ch = symbol.charAt(2);
+        System.out.println(ch);
+
+
+
     }
 }
