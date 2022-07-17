@@ -41,16 +41,14 @@ public class IfElseStatementTheme {
         // - найдите максимальное и минимальное число
         // - выведите числа на консоль, указав какое из них max и min
         System.out.println("Поиск max и min числа");
-        System.out.println("search the max and min numbers ");
         int number1 = 23;
         int number2 = 30;
         
         if (number1 > number2) {
             System.out.println(number1 + " > " + number2);
         } else {
-            System.out.println(number1 + " < " + number2);
+            System.out.println(number1 + " < " + number2 + "\n");
         }
-        System.out.println();
 
         // Работа с числом
         // - создайте переменную с любым числом
@@ -61,20 +59,22 @@ public class IfElseStatementTheme {
         // - если число равно 0, то остальные проверки не должны осуществляться
         // - отобразите полученные результаты
         System.out.println("Работа с числом");
-        int numberAny = -222;
+        int srcNum = -222;
         
-        if (numberAny != 0) { 
-            if (numberAny > 0) {
-                System.out.println("четно число");
+        if (srcNum != 0) { 
+            if(srcNum != 0) {
+                if(srcNum > 0) {
+                    System.out.printf("Число %d положительное\n", srcNum);
+                } else {
+                    System.out.printf("Число %d отрицательное\n", srcNum);
+                }
+                if(srcNum % 2 == 0) {
+                    System.out.printf("Число %d четное\n", srcNum);
+                } else {
+                    System.out.printf("Число %d нечетное\n", srcNum);
+                }
             } else {
-                System.out.println("нечетно число");
-            } if (numberAny > 0) {
-                System.out.println("положительное число");
-            } else {
-                System.out.println("отрицательное число");
-            }
-        } else {
-            System.out.println("Равен нулю" + "\n3");
+                System.out.printf("Число %d это ноль\n", srcNum);
         }
 
         // Поиск одинаковых цифр в числах
