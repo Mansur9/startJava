@@ -142,14 +142,41 @@ public class IfElseStatementTheme {
         char ch = '\u0057';
         System.out.print((char)ch);
         if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
-            System.out.println(" маленькая (большая) буква");
+            System.out.println(" маленькая (большая) буква" + "\n");
         } else if (ch >= '0' && ch <= '9') {
-            System.out.println(" число");
+            System.out.println(" число" + "\n");
         } else {
-            System.out.println(" не буква и не число" + "\n");
+            System.out.print(" не буква и не число" + "\n");
         }
 
-    }
+        System.out.println("Определение суммы вклада и начисленных банком %");
+        double contribution = 300000;
+        double deposit = 100000;
+        double interestDepositsSecond = 0.05;
+        double interestDepositsDFirst = 0.07;
+        double interestDepositsDThird = 0.10;
+        double contributionInterest;
+        double depositSum;
+        if (deposit > contribution) {
+            contributionInterest = contribution * interestDepositsSecond;
+            depositSum = contributionInterest + contribution;
+            System.out.println("сумма вклада = " + contribution);
+            System.out.println("начисленный % = " + contributionInterest);
+            System.out.println("итоговая сумма с % =" + depositSum);
+        } else if (contribution >= deposit && deposit <= 300000) {
+            contributionInterest = contribution * interestDepositsDFirst;
+            depositSum = contributionInterest + contribution;
+            System.out.println("сумма вклада = " + contribution);
+            System.out.println("начисленный % = " + contributionInterest);
+            System.out.println("итоговая сумма с % = " + depositSum);
+        } else {
+            contributionInterest = contribution * interestDepositsDThird;
+            depositSum = contributionInterest = contribution * interestDepositsDFirst;
+            System.out.println("сумма вклада = " + contribution);
+            System.out.println("начисленный % " + contributionInterest);
+            System.out.println("итоговая сумма с % = " + depositSum);
+            }
+        }
         
     }    
 }
