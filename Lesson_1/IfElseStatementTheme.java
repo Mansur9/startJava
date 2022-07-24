@@ -1,3 +1,5 @@
+import javax.annotation.processing.SupportedOptions;
+
 public class IfElseStatementTheme {
     public static void main(String[] args) {
         //Перевод псевдокода на язык Java
@@ -61,21 +63,20 @@ public class IfElseStatementTheme {
         System.out.println("Работа с числом");
         int srcNum = -222;
         
-        if (srcNum != 0) { 
-            if(srcNum != 0) {
-                if(srcNum > 0) {
-                    System.out.printf("Число %d положительное\n", srcNum);
-                } else {
-                    System.out.printf("Число %d отрицательное\n", srcNum);
-                }
-                if(srcNum % 2 == 0) {
-                    System.out.printf("Число %d четное\n", srcNum);
-                } else {
-                    System.out.printf("Число %d нечетное\n", srcNum);
-                }
+        if(srcNum != 0) {
+            if(srcNum > 0) {
+                System.out.printf("Число %d положительное\n", srcNum);
             } else {
-                System.out.printf("Число %d это ноль\n", srcNum);
-        }
+                System.out.printf("Число %d отрицательное\n", srcNum);
+            }
+            if(srcNum % 2 == 0) {
+                System.out.printf("Число %d четное\n", srcNum);
+            } else {
+                System.out.printf("Число %d нечетное\n", srcNum);
+            }
+        } else {
+            System.out.printf("Число %d это ноль\n", srcNum);
+    }
 
         // Поиск одинаковых цифр в числах
         // создайте две переменные, присвоив им два трехзначных целых числа
@@ -116,19 +117,7 @@ public class IfElseStatementTheme {
         } else {
             System.out.println("третьи числа совпали" + digitsOnes);
         }
-        String intBitsHundreds = Integer.toBinaryString(digitsHundreds);
-        System.out.println("Разряды числа: " + intBitsHundreds);
-        String intBitsDozens = Integer.toBinaryString(digitsDozens);
-        System.out.println("Разряды числа: " + intBitsDozens);
-        String intBitsOnes = Integer.toBinaryString(digitsOnes);
-        System.out.println("Разряды числа: " + intBitsOnes);
-        String intBitsHundredsSecond = Integer.toBinaryString(digitsHundredsSecond);
-        System.out.println("Разряды числа: " + intBitsHundredsSecond);
-        String intBitsDozensSecond = Integer.toBinaryString(digitsDozensSecond);
-        System.out.println("Разряды числа: " + intBitsDozensSecond);
-        String intBitSonesSecond = Integer.toBinaryString(digitsOnesSecond);
-        System.out.println("Разряды числа: " + intBitSonesSecond + "\n");
-
+        
         // Определение буквы, числа или символа по их коду
         // создайте переменную типа char
         // присвойте ей значение ‘\u0057’
@@ -146,10 +135,10 @@ public class IfElseStatementTheme {
         } else if (ch >= '0' && ch <= '9') {
             System.out.println(" число" + "\n");
         } else {
-            System.out.print(" не буква и не число" + "\n");
+            System.out.println(" не буква и не число");
         }
 
-        System.out.println("Определение суммы вклада и начисленных банком %");
+        System.out.println("\n" + "Определение суммы вклада и начисленных банком %");
         double contribution = 300000;
         double deposit = 100000;
         double interestDepositsSecond = 0.05;
@@ -175,8 +164,69 @@ public class IfElseStatementTheme {
             System.out.println("сумма вклада = " + contribution);
             System.out.println("начисленный % " + contributionInterest);
             System.out.println("итоговая сумма с % = " + depositSum);
-            }
         }
-        
-    }    
-}
+
+        // Определение оценки по предметам
+        // студент получил итоговые % по предметам:
+        // история 59%
+        // программирование 91%
+        // определите оценки по каждому предмету:
+        // <= 60% — 2
+        // > 60% - 3
+        // > 73% - 4
+        // > 91% - 5
+        // выведите в консоль:
+        // оценку и напротив предмет
+        // средний балл оценок по предметам
+        // средний % по предметам
+        System.out.println("\n" + "Определение оценки по предметам");
+        int history = 59;
+        int programming = 91;
+        if (history <= 60) {
+            int estimationHistr = 2;
+            System.out.println( estimationHistr + " - history");
+            int total = estimationHistr/1;
+            System.out.println(total + " - средний балл оценок по history");
+            
+        } else if (history > 60) {
+            int estimationHistr = 3;
+            System.out.println("3 - history");
+            int total = estimationHistr/1;
+            System.out.println(total + " - средний балл оценок по history");
+            
+        } else if (history > 73) {
+            int estimationHistr = 4;
+            System.out.println("4 - history");
+            int total = estimationHistr/1;
+            System.out.println(total + " - средний балл оценок по history");
+        } else if (history > 91) {
+            int estimationHistr = 5;
+            System.out.println("5 - history");
+            int total = estimationHistr/1;
+            System.out.println(total + " - средний балл оценок по history");
+        }
+        if (programming <= 60) {
+            int estimationProg = 2;
+            System.out.println("2 - programming"); 
+            int total = estimationProg/1;
+            System.out.println(total + " - средний балл оценок по programming");
+        } else if (programming > 60) {
+            int estimationProg = 3;
+            System.out.println("3 - programming");
+            int total = estimationProg/1;
+            System.out.println(total + " - средний балл оценок по programming");
+        } else if (programming > 73) {
+            int estimationProg = 4;
+            System.out.println("4 - programming");
+            int total = estimationProg/1;
+            System.out.println(total + " - средний балл оценок по programming");
+        } else if (programming > 91) {
+            int estimationProg = 5;
+            System.out.println("5 - programming");
+            int total = estimationProg/1;
+            System.out.println(total + " - средний балл оценок по programming");
+        }
+        System.out.println("средний % по предметам = " + ((history +programming)/2));
+    }
+    
+}    
