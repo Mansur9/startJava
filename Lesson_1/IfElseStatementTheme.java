@@ -227,6 +227,28 @@ public class IfElseStatementTheme {
             System.out.println(total + " - средний балл оценок по programming");
         }
         System.out.println("средний % по предметам = " + ((history +programming)/2));
+
+        // Расчет прибыли
+        // продавец снимает помещение за 5 000 руб. в месяц
+        // в среднем в месяц он продает товара на 13 000 руб.
+        // при этом его себестоимость равна 9 000 руб.
+        // подсчитайте годовую прибыль
+        // отобразите ее в консоли в следующем формате, например:
+        // прибыль за год: -1000 руб.
+        // прибыль за год: +3000 руб.
+        // если прибыль положительная, то рядом с числом необходимо отображать +
+        
+        System.out.println("\n" + "Расчет прибыли");
+        int rent = 5000;
+        int sales = 13000;
+        int costPrice = 9000;
+        int totalSales = (sales - costPrice - rent) * 12;
+        if (totalSales < 1000) {
+            System.out.println("прибыль за год: " + totalSales);
+        } else if (totalSales > 3000) {
+            System.out.println("прибыль за год: + " + totalSales);
+        }
+
     }
     
 }    
