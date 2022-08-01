@@ -68,7 +68,7 @@ public class IfElseStatementTheme {
                 System.out.printf("Число %d положительное\n", srcNum);
             } else {
                 System.out.printf("Число %d отрицательное\n", srcNum);
-            }
+                }
             if(srcNum % 2 == 0) {
                 System.out.printf("Число %d четное\n", srcNum);
             } else {
@@ -105,7 +105,7 @@ public class IfElseStatementTheme {
         if (digitsHundreds != digitsHundredsSecond) {
             System.out.println("первые числа не совпали");
         } else {
-                System.out.println("первые числа совпали " + digitsHundreds);
+            System.out.println("первые числа совпали " + digitsHundreds);
         }
         if (digitsDozens != digitsDozensSecond) {
             System.out.println("вторые число не совпали");
@@ -133,14 +133,14 @@ public class IfElseStatementTheme {
         if (someChar >= 'a' && someChar <= 'z') {
             System.out.println(" маленькая буква");
         } else if (someChar >= 'A' && someChar <= 'Z'){
-            System.out.println("большая буква");
+            System.out.println(" большая буква");
         } else if (someChar >= '0' && someChar <= '9') {
             System.out.println(" число");
         } else {
             System.out.println(" не буква и не число");
         }
 
-        System.out.println("\n" + "Определение суммы вклада и начисленных банком %");
+        System.out.println("\nОпределение суммы вклада и начисленных банком %");
         double contribution = 300000;
         double deposit = 100000;
         double contributionInterest;
@@ -148,22 +148,16 @@ public class IfElseStatementTheme {
         if (deposit > contribution) {
             contributionInterest = contribution * 0.05;
             depositSum = contributionInterest + contribution;
-            System.out.println("сумма вклада = " + contribution);
-            System.out.println("начисленный % = " + contributionInterest);
-            System.out.println("итоговая сумма с % =" + depositSum);
         } else if (contribution >= deposit && deposit <= 300000) {
             contributionInterest = contribution * 0.07;
             depositSum = contributionInterest + contribution;
-            System.out.println("сумма вклада = " + contribution);
-            System.out.println("начисленный % = " + contributionInterest);
-            System.out.println("итоговая сумма с % = " + depositSum);
         } else {
             contributionInterest = contribution * 0.1;
             depositSum = contributionInterest = contribution * 0.07;
-            System.out.println("сумма вклада = " + contribution);
-            System.out.println("начисленный % " + contributionInterest);
-            System.out.println("итоговая сумма с % = " + depositSum);
         }
+            System.out.println("сумма вклада = " + contribution);
+            System.out.println("начисленный % = " + contributionInterest);
+            System.out.println("итоговая сумма с % =" + depositSum);
 
         // Определение оценки по предметам
         // студент получил итоговые % по предметам:
@@ -178,52 +172,54 @@ public class IfElseStatementTheme {
         // оценку и напротив предмет
         // средний балл оценок по предметам
         // средний % по предметам
-        System.out.println("\n" + "Определение оценки по предметам");
+        System.out.println("\nОпределение оценки по предметам");
         int history = 59;
         int programming = 91;
+        int totalHistory;
+        int totalProgramming;
+        int estimationHistr;
+        int estimationProg;
         if (history <= 60) {
-            int estimationHistr = 2;
+            estimationHistr = 2;
             System.out.println( estimationHistr + " - history");
-            int total = estimationHistr/1;
-            System.out.println(total + " - средний балл оценок по history");
-            
+            totalHistory = estimationHistr/1;
+            System.out.println(totalHistory + " - средний балл оценок по history");
         } else if (history > 60) {
-            int estimationHistr = 3;
+            estimationHistr = 3;
             System.out.println("3 - history");
-            int total = estimationHistr/1;
-            System.out.println(total + " - средний балл оценок по history");
-            
+            totalHistory = estimationHistr/1;
+            System.out.println(totalHistory + " - средний балл оценок по history");
         } else if (history > 73) {
-            int estimationHistr = 4;
+            estimationHistr = 4;
             System.out.println("4 - history");
-            int total = estimationHistr/1;
-            System.out.println(total + " - средний балл оценок по history");
+            totalHistory = estimationHistr/1;
+            System.out.println(totalHistory + " - средний балл оценок по history");
         } else if (history > 91) {
-            int estimationHistr = 5;
+            estimationHistr = 5;
             System.out.println("5 - history");
-            int total = estimationHistr/1;
-            System.out.println(total + " - средний балл оценок по history");
+            totalHistory = estimationHistr/1;
+            System.out.println(totalHistory + " - средний балл оценок по history");
         }
         if (programming <= 60) {
-            int estimationProg = 2;
-            System.out.println("2 - programming"); 
-            int total = estimationProg/1;
-            System.out.println(total + " - средний балл оценок по programming");
+            estimationProg = 2;
+            totalProgramming = estimationProg/1;
+            System.out.println(estimationProg + " - programming");
+            System.out.println(totalProgramming + " - средний балл оценок по programming");
         } else if (programming > 60) {
-            int estimationProg = 3;
-            System.out.println("3 - programming");
-            int total = estimationProg/1;
-            System.out.println(total + " - средний балл оценок по programming");
+            estimationProg = 3;
+            totalProgramming = estimationProg/1;
+            System.out.println(estimationProg + " - programming");
+            System.out.println(totalProgramming + " - средний балл оценок по programming");
         } else if (programming > 73) {
-            int estimationProg = 4;
-            System.out.println("4 - programming");
-            int total = estimationProg/1;
-            System.out.println(total + " - средний балл оценок по programming");
+            estimationProg = 4;
+            totalProgramming = estimationProg/1;
+            System.out.println(estimationProg + " - programming");
+            System.out.println(totalProgramming + " - средний балл оценок по programming");
         } else if (programming > 91) {
-            int estimationProg = 5;
-            System.out.println("5 - programming");
-            int total = estimationProg/1;
-            System.out.println(total + " - средний балл оценок по programming");
+            estimationProg = 5;
+            totalProgramming = estimationProg/1;
+            System.out.println(estimationProg + " - programming");
+            System.out.println(totalProgramming + " - средний балл оценок по programming");
         }
         System.out.println("средний % по предметам = " + ((history +programming)/2));
 
@@ -237,17 +233,17 @@ public class IfElseStatementTheme {
         // прибыль за год: +3000 руб.
         // если прибыль положительная, то рядом с числом необходимо отображать +
         
-        System.out.println("\n" + "Расчет прибыли");
+        System.out.println("\nРасчет прибыли");
         int rent = 5000;
         int sales = 13000;
         int costPrice = 9000;
         int totalSales = (sales - costPrice - rent) * 12;
-        if (totalSales < 1000) {
+        if (totalSales < 0) {
             System.out.println("прибыль за год: " + totalSales);
-        } else if (totalSales > 3000) {
+        } else {
             System.out.println("прибыль за год: + " + totalSales);
         }
-
+        
     }
     
 }    
