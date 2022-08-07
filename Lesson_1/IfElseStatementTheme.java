@@ -1,4 +1,3 @@
-import javax.annotation.processing.SupportedOptions;
 
 public class IfElseStatementTheme {
     public static void main(String[] args) {
@@ -145,19 +144,20 @@ public class IfElseStatementTheme {
         double deposit = 100000;
         double contributionInterest;
         double depositSum;
+        double percent;
         if (deposit > contribution) {
-            contributionInterest = contribution * 0.05;
-            depositSum = contributionInterest + contribution;
+            percent = 0.05;
         } else if (contribution >= deposit && deposit <= 300000) {
-            contributionInterest = contribution * 0.07;
-            depositSum = contributionInterest + contribution;
+            percent = 0.07;
         } else {
-            contributionInterest = contribution * 0.1;
-            depositSum = contributionInterest = contribution * 0.07;
+            percent = 0.1;
         }
+            contributionInterest = contribution * percent;
+            depositSum = contributionInterest + contribution;
             System.out.println("сумма вклада = " + contribution);
             System.out.println("начисленный % = " + contributionInterest);
             System.out.println("итоговая сумма с % =" + depositSum);
+            System.out.println("5 баллов");
 
         // Определение оценки по предметам
         // студент получил итоговые % по предметам:
@@ -173,54 +173,48 @@ public class IfElseStatementTheme {
         // средний балл оценок по предметам
         // средний % по предметам
         System.out.println("\nОпределение оценки по предметам");
+        
         int history = 59;
         int programming = 91;
-        int totalHistory;
-        int totalProgramming;
-        int estimationHistr;
-        int estimationProg;
+        int totalProgramming = 0;
+        int estimationHistr = 0;
+        int estimationProg = 0;
+        int quantityScoreHistr = 0;
+        int quantityScoreProg = 0;
+        int totalHistory = 0;
         if (history <= 60) {
             estimationHistr = 2;
-            System.out.println( estimationHistr + " - history");
-            totalHistory = estimationHistr/1;
-            System.out.println(totalHistory + " - средний балл оценок по history");
+            quantityScoreHistr = 1;
         } else if (history > 60) {
             estimationHistr = 3;
-            System.out.println("3 - history");
-            totalHistory = estimationHistr/1;
-            System.out.println(totalHistory + " - средний балл оценок по history");
+            quantityScoreHistr = 1;
         } else if (history > 73) {
             estimationHistr = 4;
-            System.out.println("4 - history");
-            totalHistory = estimationHistr/1;
-            System.out.println(totalHistory + " - средний балл оценок по history");
+            quantityScoreHistr = 1;
         } else if (history > 91) {
             estimationHistr = 5;
-            System.out.println("5 - history");
-            totalHistory = estimationHistr/1;
-            System.out.println(totalHistory + " - средний балл оценок по history");
+            quantityScoreHistr = 1;
         }
         if (programming <= 60) {
             estimationProg = 2;
-            totalProgramming = estimationProg/1;
-            System.out.println(estimationProg + " - programming");
-            System.out.println(totalProgramming + " - средний балл оценок по programming");
+            quantityScoreProg = 1;
         } else if (programming > 60) {
             estimationProg = 3;
-            totalProgramming = estimationProg/1;
-            System.out.println(estimationProg + " - programming");
-            System.out.println(totalProgramming + " - средний балл оценок по programming");
+            quantityScoreProg = 1;
         } else if (programming > 73) {
             estimationProg = 4;
-            totalProgramming = estimationProg/1;
-            System.out.println(estimationProg + " - programming");
-            System.out.println(totalProgramming + " - средний балл оценок по programming");
+            quantityScoreProg = 1;
         } else if (programming > 91) {
             estimationProg = 5;
-            totalProgramming = estimationProg/1;
-            System.out.println(estimationProg + " - programming");
-            System.out.println(totalProgramming + " - средний балл оценок по programming");
+            quantityScoreProg = 1;
         }
+        System.out.println(estimationHistr + " - history");
+        totalHistory = estimationHistr / quantityScoreHistr;
+        System.out.println(totalHistory + " - средний балл оценок по history");
+        totalProgramming = estimationProg / quantityScoreProg;
+        System.out.println(estimationProg + " - programming");
+        System.out.println(totalProgramming + " - средний балл оценок по programming");
+        System.out.println("средний % по предметам = " + ((history +programming)/2));
         System.out.println("средний % по предметам = " + ((history +programming)/2));
 
         // Расчет прибыли
@@ -238,7 +232,7 @@ public class IfElseStatementTheme {
         int sales = 13000;
         int costPrice = 9000;
         int totalSales = (sales - costPrice - rent) * 12;
-        if (totalSales < 0) {
+        if (totalSales > 0) {
             System.out.println("прибыль за год: " + totalSales);
         } else {
             System.out.println("прибыль за год: + " + totalSales);
