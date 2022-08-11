@@ -5,9 +5,9 @@ public class CyclesTheme {
         do {
         srcNumMin = srcNumMin + 1;
         if(srcNumMin % 2 == 0) { 
-            System.out.printf("Число %d четное\n", srcNumMin);
+            System.out.printf("Число X = %d четное\n", srcNumMin);
         } else {
-            System.out.printf("Число %d нечетное\n", srcNumMin);
+            System.out.printf("Число Y = %d нечетное\n", srcNumMin);
             }
 
         } while (srcNum >= srcNumMin);
