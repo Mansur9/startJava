@@ -1,15 +1,20 @@
 public class CyclesTheme {
     public static void main(String[] aerg) {
-        int srcNum = 21;
-        int srcNumMin = -10;
+        System.out.println("Подсчет суммы четных и нечетных чисел");
+        int endRange = 21;
+        int startRange = -10;
+        int oldNumberSum = 0;
+        int evenNumberCount = 0;
         do {
-        srcNumMin = srcNumMin + 1;
-        if(srcNumMin % 2 == 0) { 
-            System.out.printf("Число X = %d четное\n", srcNumMin);
-        } else {
-            System.out.printf("Число Y = %d нечетное\n", srcNumMin);
+            startRange = startRange + 1;
+            if(startRange % 2 == 0) { 
+                evenNumberCount = evenNumberCount + startRange;
+            } else {
+                oldNumberSum = oldNumberSum + startRange;
             }
 
-        } while (srcNum >= srcNumMin);
+        } while (endRange >= startRange);
+        System.out.println("Cумма четных = " +evenNumberCount);
+        System.out.println("Сумма нечетных = " + oldNumberSum);
     }
 }
