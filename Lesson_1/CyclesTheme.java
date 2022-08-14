@@ -18,7 +18,7 @@ public class CyclesTheme {
         System.out.println();
 
         System.out.println("Вывод чисел в интервале (min и max) в порядке убывания");
-           // Вывод чисел в интервале (min и max) в порядке убывания
+        // Вывод чисел в интервале (min и max) в порядке убывания
         // даны значения 10, 5, -1
         // найдите среди них max и min число
         // отобразите в консоль в одну строку, с помощью for, все числа в интервале (min, max) в порядке убывания
@@ -47,8 +47,8 @@ public class CyclesTheme {
         } else {
             System.out.println("max = number1 and number2");
         }
-        for (int i = number2; i <= number1; i++) {
-            System.out.print(i);
+        for (int i = 10; i >= 5; i--) {
+        System.out.print(i);
         }   
         System.out.println();
     }
