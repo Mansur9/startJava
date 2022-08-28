@@ -66,9 +66,9 @@ public class CyclesTheme {
         int sumNumb = 0;
         int remNumb = 0;
         int revNumber = 0;
-        while ( srcNumber > 0){
+        while (srcNumber > 0){
             remNumb = srcNumber % 10;
-            revNumber = remNumb *10 + remNumb;
+            revNumber = remNumb * 10 + remNumb;
             sumNumb += revNumber;
             srcNumber /= 10;
             System.out.println(srcNumber);
