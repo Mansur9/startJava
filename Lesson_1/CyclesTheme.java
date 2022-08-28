@@ -23,9 +23,9 @@ public class CyclesTheme {
         // отобразите в консоль в одну строку, с помощью for, все числа в интервале (min, max) в порядке убывания
         // обратите внимание, что интервал — математический
         // использовать методы max и min класса Math — нельзя
-        int number1 = 9;
+        int number1 = 10;
         int number2 = 5;
-        int number3 = 0;
+        int number3 = -1;
         int max = 0;
         int min = 0; 
         
@@ -48,7 +48,9 @@ public class CyclesTheme {
         System.out.println("min = " + min);
 
         for (int i=max; i>min; i--) {
+            if (i >=0 && i<=9){
             System.out.print(i);
+            }
         }
         System.out.println();
 
@@ -73,6 +75,6 @@ public class CyclesTheme {
             int digitsZero = (srcNumber / 1000) % 10;
             System.out.println(digitsZero);
             System.out.println(digitsZero + digitsOnes + digitsDozens + digitsHundreds);
-
+        }
     }
 }
