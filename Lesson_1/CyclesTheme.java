@@ -12,7 +12,7 @@ public class CyclesTheme {
             } else {
                 evenSumNumber = evenSumNumber + startRange;
             }
-        } while (startRange >= endRange);
+        } while (startRange <= endRange);
         System.out.println("Сумма четных = " +evenSumNumber);
         System.out.println("Сумма нечетных = " + oddNumberCount);
 
