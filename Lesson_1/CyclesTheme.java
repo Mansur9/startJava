@@ -8,9 +8,9 @@ public class CyclesTheme {
         do {
             startRange++;
             if(startRange % 2 == 0) { 
-                oddNumberCount = oddNumberCount + startRange;
+                oddNumberCount += startRange;
             } else {
-                evenSumNumber = evenSumNumber + startRange;
+                evenSumNumber += startRange;
             }
         } while (startRange <= endRange);
         System.out.println("Сумма четных = " +evenSumNumber);
@@ -54,7 +54,8 @@ public class CyclesTheme {
         }
         System.out.println();
 
-        System.out.println("\nдано число 1234");
+        System.out.println("\nВывод реверсивного числа и суммы его цифр");
+        // дано число 1234
         // в цикле while выделите каждую его цифру
         // подсчитайте сумму полученных цифр
         // отобразите в консоли:
@@ -62,19 +63,17 @@ public class CyclesTheme {
         // сумму его цифр
 
         int srcNumber = 1234;
-        int i = 0;
         int sumNumb = 0;
-        while (i <= 0){
-            i++;
-            int digitsHundreds = srcNumber % 10;
-            System.out.println(digitsHundreds); 
-            int digitsDozens = (srcNumber / 10) % 10;
-            System.out.println(digitsDozens);
-            int digitsOnes = (srcNumber / 100) % 10; 
-            System.out.println(digitsOnes);
-            int digitsZero = (srcNumber / 1000) % 10;
-            System.out.println(digitsZero);
-            System.out.println(digitsZero + digitsOnes + digitsDozens + digitsHundreds);
+        int remNumb = 0;
+        int revNumber = 0;
+        while ( srcNumber > 0){
+            remNumb = srcNumber % 10;
+            revNumber = remNumb *10 + remNumb;
+            sumNumb += revNumber;
+            srcNumber /= 10;
+            System.out.println(srcNumber);
         }
+        System.out.println("Sum of digits of given number: " + sumNumb);
+        System.out.println("Reverse of given number: " + revNumber);
     }
 }
