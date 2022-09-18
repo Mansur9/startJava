@@ -3,18 +3,18 @@ public class CyclesTheme {
         System.out.println("Подсчет суммы четных и нечетных чисел");
         int endRange = 21;
         int startRange = -10;
-        int evenSumNumber = 0;
-        int oddNumberCount = 0;
+        int sumEvenNumber = 0;
+        int sumOddNumber = 0;
         do {
             if(startRange % 2 == 0) { 
-                oddNumberCount += startRange;
+                sumOddNumber += startRange;
             } else {
-                evenSumNumber += startRange;
+                sumEvenNumber += startRange;
             }
             startRange++;
         } while (startRange <= endRange);
-        System.out.println("Сумма четных = " +evenSumNumber);
-        System.out.println("Сумма нечетных = " + oddNumberCount);
+        System.out.println("Сумма четных = " +sumEvenNumber);
+        System.out.println("Сумма нечетных = " + sumOddNumber);
 
         System.out.println("\nВывод чисел в интервале (min и max) в порядке убывания");
         // Вывод чисел в интервале (min и max) в порядке убывания
@@ -29,12 +29,9 @@ public class CyclesTheme {
         int max = 0;
         int min = 0; 
         
-    
         if (number1 >= number2 && number1 >= number3) {
-            number1 = number1 - 1;
             max = number1;
         } else {
-            number1 = number1 - 1;
             min = number1;
         }
         if (number2 >= number3 && number2 >= number1) {
@@ -43,7 +40,6 @@ public class CyclesTheme {
             min = number2;
         }
         if (number3 >= number1 && number3 >= number2 && number3 > 0) {
-            number3 = number3 + 1;
             max = number3;
         } else {
             number3 = number3 + 1;
@@ -53,7 +49,7 @@ public class CyclesTheme {
         System.out.println("max = " + max);
         System.out.println("min = " + min);
 
-        for (int i = max; i > min; i--) {
+        for (int i = --max; i > min; i--) {
             System.out.print(i);
             
         }
