@@ -76,5 +76,6 @@ public class CyclesTheme {
         }
         System.out.println("Sum of digits of given number: " + sumNumb);
         System.out.println("Reverse of given number: " + revNumber);
+        
     }
 }
