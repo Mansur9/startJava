@@ -23,32 +23,26 @@ public class CyclesTheme {
         // отобразите в консоль в одну строку, с помощью for, все числа в интервале (min, max) в порядке убывания
         // обратите внимание, что интервал — математический
         // использовать методы max и min класса Math — нельзя
-        int number1 = 10;
-        int number2 = 5;
-        int number3 = -1;
-        int max = 0;
-        int min = 0; 
-        
-        if (number1 >= number2 && number1 >= number3) {
-            max = number1;
-        } else {
-            min = number1;
+        int a = 10;
+        int b = 5;
+        int c = -1;
+        int max = a;
+        int min = c;
+        if (a > max){
+            max = a;
         }
-        if (number2 >= number3 && number2 >= number1) {
-            max = number2;
-        } else {
-            min = number2;
+        if (c > max){
+            max = c;
         }
-        if (number3 >= number1 && number3 >= number2 && number3 > 0) {
-            max = number3;
-        } else {
-            number3 = number3 + 1;
-            min = number3;
+        if (b < min){
+            min = b;
         }
-
-        System.out.println("max = " + max);
-        System.out.println("min = " + min);
-
+        if (c < min){
+            c = min;
+        }
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
         for (int i = --max; i > min; i--) {
             System.out.print(i);
             
@@ -73,9 +67,9 @@ public class CyclesTheme {
             sumNumb += revNumber;
             srcNumber /= 10;
             System.out.println(srcNumber);
+            System.out.println(revNumber);
         }
         System.out.println("Sum of digits of given number: " + sumNumb);
         System.out.println("Reverse of given number: " + revNumber);
-        
-    }
+    }   
 }
