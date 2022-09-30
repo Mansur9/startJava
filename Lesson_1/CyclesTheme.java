@@ -59,11 +59,11 @@ public class CyclesTheme {
 
         int srcNumber = 1234;
         int sumNumb = 0;
-        int remNumb = 0;
+        int digitNumb = 0;
         int revNumber = 0;
         while (srcNumber > 0){
-            remNumb = srcNumber % 10;
-            revNumber = remNumb * 10 + remNumb;
+            digitNumb = srcNumber % 10;
+            revNumber = digitNumb * 10 + digitNumb;
             sumNumb += revNumber;
             srcNumber /= 10;
             System.out.println(srcNumber);
@@ -71,5 +71,15 @@ public class CyclesTheme {
         }
         System.out.println("Sum of digits of given number: " + sumNumb);
         System.out.println("Reverse of given number: " + revNumber);
-    }   
+
+        System.out.println("\nВывод чисел на консоль в несколько строк");    
+        for (int i = 0; i < 5; i++) {
+            for (int j = 1; j <= 5; j += 2) {
+                System.out.printf("%15s",(i * 5 + j) + " ");
+            }
+            System.out.println();
+            
+        }
+
+    }
 }
