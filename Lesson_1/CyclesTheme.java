@@ -63,23 +63,32 @@ public class CyclesTheme {
         int revNumber = 0;
         while (srcNumber > 0){
             digitNumb = srcNumber % 10;
-            revNumber = digitNumb * 10 + digitNumb;
-            sumNumb += revNumber;
+            revNumber = revNumber * 10 + digitNumb;
+            sumNumb += digitNumb;
             srcNumber /= 10;
-            System.out.println(srcNumber);
-            System.out.println(revNumber);
         }
         System.out.println("Sum of digits of given number: " + sumNumb);
         System.out.println("Reverse of given number: " + revNumber);
 
-        System.out.println("\nВывод чисел на консоль в несколько строк");    
-        for (int i = 0; i < 5; i++) {
-            for (int j = 1; j <= 5; j += 2) {
-                System.out.printf("%15s",(i * 5 + j) + " ");
+        System.out.println("\nВывод чисел на консоль в несколько строк");
+        int countInRow = 0;
+        for (int i = 1; i < 24; i++) {
+            if (i % 2 == 1) {
+                countInRow++;
+                System.out.printf("%10s", i);
             }
-            System.out.println();
-            
+            if (countInRow == 5) {
+                System.out.println();
+                countInRow = 0;
+            }
         }
-
+        if (countInRow != 0) {
+            while (countInRow < 5) {
+                System.out.printf("%10s", 0);
+                countInRow++;
+            }
+        }
+        System.out.println("\nПроверка количества единиц на четность");
+        int eventNumb = 3141591;
     }
 }
