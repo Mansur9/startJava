@@ -62,12 +62,13 @@ public class CyclesTheme {
         int revNumber = 0;
         while (srcNumber > 0) {
             digit = srcNumber % 10;
+            System.out.print(digit);
             revNumber = revNumber * 10 + digit;
             sumNumber += digit;
             srcNumber /= 10;
         }
-        System.out.println("Sum of digits of given number: " + sumNumber);
-        System.out.println("Reverse of given number: " + revNumber);
+        System.out.println("\nSum of digits of given number: " + sumNumber);
+        // System.out.println("Reverse of given number: " + revNumber);
 
         System.out.println("\nВывод чисел на консоль в несколько строк");
         int countInRow = 0;
