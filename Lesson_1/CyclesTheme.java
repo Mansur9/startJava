@@ -28,16 +28,16 @@ public class CyclesTheme {
         int c = -1;
         int max = a;
         int min = c;
-        if (a > max){
+        if (a > max) {
             max = a;
         }
-        if (c > max){
+        if (c > max) {
             max = c;
         }
-        if (b < min){
+        if (b < min) {
             min = b;
         }
-        if (c < min){
+        if (c < min) {
             c = min;
         }
         System.out.println(a);
@@ -45,7 +45,6 @@ public class CyclesTheme {
         System.out.println(c);
         for (int i = --max; i > min; i--) {
             System.out.print(i);
-            
         }
         System.out.println();
 
@@ -58,16 +57,16 @@ public class CyclesTheme {
         // сумму его цифр
 
         int srcNumber = 1234;
-        int sumNumb = 0;
-        int digitNumb = 0;
+        int sumNumber = 0;
+        int digit = 0;
         int revNumber = 0;
-        while (srcNumber > 0){
-            digitNumb = srcNumber % 10;
-            revNumber = revNumber * 10 + digitNumb;
-            sumNumb += digitNumb;
+        while (srcNumber > 0) {
+            digit = srcNumber % 10;
+            revNumber = revNumber * 10 + digit;
+            sumNumber += digit;
             srcNumber /= 10;
         }
-        System.out.println("Sum of digits of given number: " + sumNumb);
+        System.out.println("Sum of digits of given number: " + sumNumber);
         System.out.println("Reverse of given number: " + revNumber);
 
         System.out.println("\nВывод чисел на консоль в несколько строк");
@@ -89,6 +88,5 @@ public class CyclesTheme {
             }
         }
         System.out.println("\nПроверка количества единиц на четность");
-        int eventNumb = 3141591;
     }
 }
