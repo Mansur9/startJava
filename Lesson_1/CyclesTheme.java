@@ -27,22 +27,20 @@ public class CyclesTheme {
         int b = 5;
         int c = -1;
         int max = a;
-        int min = c;
-        if (a > max) {
-            max = a;
+        int min = b;
+        
+        if (b > max) {
+            max = b;
         }
         if (c > max) {
             max = c;
         }
-        if (b < min) {
-            min = b;
+        if (a < min) {
+            min = a;
         }
         if (c < min) {
-            c = min;
+            min = c;
         }
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
         for (int i = --max; i > min; i--) {
             System.out.print(i);
         }
