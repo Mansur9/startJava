@@ -28,7 +28,6 @@ public class CyclesTheme {
         int c = -1;
         int max = a;
         int min = b;
-        
         if (b > max) {
             max = b;
         }
