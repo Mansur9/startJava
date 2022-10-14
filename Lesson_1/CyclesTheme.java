@@ -53,28 +53,22 @@ public class CyclesTheme {
         // отобразите в консоли:
         // исходное число в обратном порядке
         // сумму его цифр
-
         int srcNumber = 1234;
         int sumNumber = 0;
         int digit = 0;
-        int revNumber = 0;
         while (srcNumber > 0) {
             digit = srcNumber % 10;
             System.out.print(digit);
-            revNumber = revNumber * 10 + digit;
             sumNumber += digit;
             srcNumber /= 10;
         }
         System.out.println("\nSum of digits of given number: " + sumNumber);
-        // System.out.println("Reverse of given number: " + revNumber);
 
         System.out.println("\nВывод чисел на консоль в несколько строк");
         int countInRow = 0;
-        for (int i = 1; i < 24; i++) {
-            if (i % 2 == 1) {
-                countInRow++;
-                System.out.printf("%10s", i);
-            }
+        for (int i = 1; i < 24; i += 2) {
+            countInRow = countInRow + 1;
+            System.out.printf("%3s", i);
             if (countInRow == 5) {
                 System.out.println();
                 countInRow = 0;
@@ -82,7 +76,7 @@ public class CyclesTheme {
         }
         if (countInRow != 0) {
             while (countInRow < 5) {
-                System.out.printf("%10s", 0);
+                System.out.printf("%3s", 0);
                 countInRow++;
             }
         }
