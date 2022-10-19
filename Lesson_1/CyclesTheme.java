@@ -80,5 +80,58 @@ public class CyclesTheme {
             }
         }
         System.out.println("\nПроверка количества единиц на четность");
+        int i = 0;
+        int j = 1;
+        int k = 0;
+        char symblAce = 36;
+        char symblStar = 42;
+        char symbolGrille = 35;
+        for (i = 0; i < 50; i++) {
+            countInRow ++;
+            System.out.print(symblStar);
+            if (countInRow == 10) {
+                System.out.println();
+                countInRow = 0;
+            }
+        }
+        System.out.println();
+        while(k < 15) {
+            k++;
+            countInRow ++;
+            if (k < 6) {
+                System.out.print(symbolGrille);
+            } else if (k == 6) {
+                System.out.print("\n" + symbolGrille);
+            } else if (k > 6 && k < 10) {
+                System.out.print(symbolGrille);
+            } else if (k == 10) {
+                System.out.print("\n" + symbolGrille);
+            } else if (k > 10 && k < 13) {
+                System.out.print(symbolGrille);
+            } else if (k == 13) {
+                System.out.print("\n" + symbolGrille);
+            } else if (k > 13 && k < 15) {
+                System.out.print(symbolGrille);
+            }else if (k == 15) {
+            System.out.print("\n" + symbolGrille);
+            }
+        }
+        System.out.println();
+        do {
+            if (j > 1 && j < 4) {
+                System.out.print(symblAce);
+            } else if (j == 4) {
+                System.out.print("\n" + symblAce);
+            } else if (j > 4 && j < 7) {
+                System.out.print(symblAce);
+            } else if (j == 7) {
+                System.out.print("\n" + symblAce);
+            } else if (j > 7 && j < 9) {
+                System.out.print(symblAce);
+            } else {
+                System.out.println("\n" + symblAce);
+            }
+        j++;
+        } while (j <= 9);
     }
 }
