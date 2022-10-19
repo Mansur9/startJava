@@ -79,25 +79,31 @@ public class CyclesTheme {
                 countInRow++;
             }
         }
+        System.out.println();
+
         System.out.println("\nПроверка количества единиц на четность");
+        System.out.println();
+
+        System.out.println("\nОтображение фигур в консоли");
         int i = 0;
         int j = 1;
         int k = 0;
+        int countInNext = 0;
         char symblAce = 36;
         char symblStar = 42;
         char symbolGrille = 35;
         for (i = 0; i < 50; i++) {
-            countInRow ++;
+            countInNext ++;
+            // System.out.print(countInNext + ";");
             System.out.print(symblStar);
-            if (countInRow == 10) {
+            if (countInNext == 10) {
                 System.out.println();
-                countInRow = 0;
+                countInNext = 0;
             }
         }
         System.out.println();
         while(k < 15) {
             k++;
-            countInRow ++;
             if (k < 6) {
                 System.out.print(symbolGrille);
             } else if (k == 6) {
