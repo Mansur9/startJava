@@ -82,6 +82,24 @@ public class CyclesTheme {
         System.out.println();
 
         System.out.println("\nПроверка количества единиц на четность");
+        int srcNumberSecond = 3242592;
+        int digitsHundreds = 1;
+        int contNumbfirst = 0;
+        int countNumberSecond = 1;
+        int countNumbThirdth = 0;
+        while (digitsHundreds > 0 ) {
+            contNumbfirst++;
+            digitsHundreds = (srcNumberSecond / countNumberSecond) % 10;
+            if (digitsHundreds == 2) {
+                countNumbThirdth++;
+            }
+            countNumberSecond *= 10;
+        }
+        if (countNumbThirdth % 2 == 0) {
+            System.out.println("число X содержит " + countNumbThirdth + " - четное количество единиц");
+        } else {
+            System.out.println("число X содержит " + countNumbThirdth + " - нечетное количество единиц");
+        }
         System.out.println();
 
         System.out.println("\nОтображение фигур в консоли");
@@ -94,7 +112,6 @@ public class CyclesTheme {
         char symbolGrille = 35;
         for (i = 0; i < 50; i++) {
             countInNext ++;
-            // System.out.print(countInNext + ";");
             System.out.print(symblStar);
             if (countInNext == 10) {
                 System.out.println();
