@@ -83,14 +83,14 @@ public class CyclesTheme {
 
         System.out.println("\nПроверка количества единиц на четность");
         int srcNumberSecond = 3242592;
-        int digitsHundreds = 1;
+        int digitsCount = 1;
         int contNumbfirst = 0;
         int countNumberSecond = 1;
         int countNumbThirdth = 0;
-        while (digitsHundreds > 0 ) {
+        while (digitsCount > 0 ) {
             contNumbfirst++;
-            digitsHundreds = (srcNumberSecond / countNumberSecond) % 10;
-            if (digitsHundreds == 2) {
+            digitsCount = (srcNumberSecond / countNumberSecond) % 10;
+            if (digitsCount == 2) {
                 countNumbThirdth++;
             }
             countNumberSecond *= 10;
