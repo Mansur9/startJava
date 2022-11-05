@@ -9,7 +9,7 @@ public class Calculator {
             System.out.println(a + " " + sign + " " + b + " = "+ result);
         } else if  (sign == "-") {
             result = a - b;
-            System.out.println(a + "" + sign + " " + b + " = "+ result);
+            System.out.println(a + " " + sign + " " + b + " = "+ result);
         } else if (sign == "/") {
             result = a / b;
             System.out.println(a + " " + sign + " " + b + " = "+ result);
