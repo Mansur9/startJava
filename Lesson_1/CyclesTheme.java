@@ -204,5 +204,13 @@ public class CyclesTheme {
         } else {
             System.out.println("число " + numeric + " не является счастливым");
         }
+
+        System.out.println("\nВывод таблицы умножения Пифагора");
+        for (int q = 1; q < 10; q++) {
+            for (int r = 1; r < 10; r++) {
+                System.out.printf("%3s",q * r);
+            }
+            System.out.println("");
+    }
     }
 }
