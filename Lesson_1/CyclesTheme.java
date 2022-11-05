@@ -156,5 +156,22 @@ public class CyclesTheme {
             }
         j++;
         } while (j <= 9);
+        
+        System.out.println("\nОтображение ASCII-символов");
+        char symbol;
+        for(int n = 0; n < 48; n++) {
+            if (n % 2 == 1) {
+            System.out.print(n + " - ");
+            symbol = (char)n;
+            System.out.println(symbol);
+            }
+        }
+        for(int n = 97; n < 123; n++) {
+            if (n % 2 == 0) {
+                System.out.print(n + " - ");
+                symbol = (char)n;
+                System.out.println(symbol);
+                }
+        }
     }
 }
