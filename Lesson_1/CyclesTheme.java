@@ -171,7 +171,20 @@ public class CyclesTheme {
                 System.out.print(n + " - ");
                 symbol = (char)n;
                 System.out.println(symbol);
-                }
+            }
+        }
+
+        System.out.println("\nПроверка, является ли число палиндромом");
+        int total = 1234321;
+        int digits0 = (total / 1000000) % 10;
+        int digits1 = (total / 100000) % 10;
+        int digits2 = (total / 10000) % 10;
+        int digits3 = (total / 1000) % 10;
+        int digits4 = (total / 100) % 10;
+        int digits5 = (total / 10) % 10;
+        int digits6 = total % 10;
+        if (digits0 == digits6 && digits1 == digits5 && digits2 == digits4) {
+        System.out.println("число " + total + " является палиндромом");
         }
     }
 }
