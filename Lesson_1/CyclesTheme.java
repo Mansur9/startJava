@@ -186,5 +186,23 @@ public class CyclesTheme {
         if (digits0 == digits6 && digits1 == digits5 && digits2 == digits4) {
         System.out.println("число " + total + " является палиндромом");
         }
+
+        System.out.println("\nОпределение, является ли число счастливым");
+        int numeric = 123321;
+        int digit1 = (numeric / 100000) % 10;
+        int digit2 = (numeric / 10000) % 10;
+        int digit3 = (numeric / 1000) % 10;
+        int digit4 = (numeric / 100) % 10;
+        int digit5 = (numeric / 10) % 10;
+        int digit6 = numeric % 10;
+        int sumFirs = digit1 + digit2 + digit3; 
+        int sumSecond = digit4 + digit5 + digit6;
+        System.out.println("Сумма цифр первой группы " + sumFirs + " = " + digit1 + " + " + digit2 + " + " + digit3); 
+        System.out.println("Сумма цифр второй группы " + sumSecond + " = " + digit4 + " + " + digit5 + " + " + digit6);
+        if (sumFirs == sumSecond) {
+        System.out.println("число " + numeric + " является счастливым");
+        } else {
+            System.out.println("число " + numeric + " не является счастливым");
+        }
     }
 }
