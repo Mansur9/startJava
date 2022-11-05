@@ -13,7 +13,7 @@ public class Calculator {
         } else if (sign == "/") {
             result = a / b;
             System.out.println(a + " " + sign + " " + b + " = "+ result);
-        } else (sign == "*") {
+        } else if (sign == "*") {
             result = a * b;
             System.out.println(a + " " + sign + " " + b + " = "+ result);
         }
