@@ -8,7 +8,7 @@ public class MyFirstGame {
                 System.out.println("Вы победили!");
                 break;
             } else if (number > digit) {
-                System.out.println(digit + " меньше того, что загадал компьютер - " + number );
+                System.out.println(digit + " меньше того, что загадал компьютер - " + number);
                 break;
             } else if (number < digit) {
                 System.out.println(digit + " больше того, что загадал компьютер - " + number);
