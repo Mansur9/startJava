@@ -6,7 +6,7 @@ public class MyFirstGame {
         while (numberRandom != number) {
             numberRandom = (int)(Math.random() * numberRandomLimit);
             if (numberRandom > number) {
-                System.out.println(number + " меньше того, что загадал компьютер - " + numberRandom );
+                System.out.println(number + " меньше того, что загадал компьютер - " + numberRandom);
             } else if (numberRandom < number) {
                 System.out.println(number + " больше того, что загадал компьютер - " + numberRandom);
             }
