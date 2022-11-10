@@ -1,18 +1,16 @@
 public class MyFirstGame {
     public static void main(String[] args) {
-        int numberRandomLimit = 101;
-        int numberRandom = -1;
-        int number = 66;
-        while (numberRandom != number) {
-            numberRandom = (int)(Math.random() * numberRandomLimit);
-            if (numberRandom > number) {
-                System.out.println(number + " меньше того, что загадал компьютер - " + numberRandom);
-            } else if (numberRandom < number) {
-                System.out.println(number + " больше того, что загадал компьютер - " + numberRandom);
-            }
-        if (numberRandom == number){
-            System.out.println("Вы победили!");   
+        int endRange = 101; // numberRandomLimit назови endRange
+        int secretNumber = 0; // numberRandom назови secretNumber
+        int playerNumber = 66; // number назови playerNumber
+        while (secretNumber != playerNumber) {
+            secretNumber = (int)(Math.random() * endRange);
+            if (secretNumber > playerNumber) {
+                System.out.println(playerNumber + " меньше того, что загадал компьютер - " + secretNumber);
+            } else if (secretNumber < playerNumber) {
+                System.out.println(playerNumber + " больше того, что загадал компьютер - " + secretNumber);
             }
         }
+            System.out.println("Вы победили!");
     }
 }

@@ -175,16 +175,20 @@ public class CyclesTheme {
         }
 
         System.out.println("\nПроверка, является ли число палиндромом");
-        int total = 1234321;
-        int digits0 = (total / 1000000) % 10;
-        int digits1 = (total / 100000) % 10;
-        int digits2 = (total / 10000) % 10;
-        int digits3 = (total / 1000) % 10;
-        int digits4 = (total / 100) % 10;
-        int digits5 = (total / 10) % 10;
-        int digits6 = total % 10;
-        if (digits0 == digits6 && digits1 == digits5 && digits2 == digits4) {
-        System.out.println("число " + total + " является палиндромом");
+        int numberPolidrome = 1234321;
+        int srcNumberSave = numberPolidrome;
+        int countNumberSave = 0;
+        int NumbersRev = 0;
+       
+        while (srcNumberSave > 0 ) {
+            NumbersRev = srcNumberSave % 10;
+            countNumberSave = countNumberSave * 10 + NumbersRev;
+            srcNumberSave = srcNumberSave / 10;
+            }
+        if (numberPolidrome == countNumberSave) {
+            System.out.println("число " + numberPolidrome + " является палиндромом");
+        } else {
+            System.out.println("число " + numberPolidrome + " не является палиндромом");
         }
 
         System.out.println("\nОпределение, является ли число счастливым");
