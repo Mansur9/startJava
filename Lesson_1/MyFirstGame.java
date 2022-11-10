@@ -1,8 +1,8 @@
 public class MyFirstGame {
     public static void main(String[] args) {
-        int endRange = 101; // numberRandomLimit назови endRange
-        int secretNumber = 0; // numberRandom назови secretNumber
-        int playerNumber = 66; // number назови playerNumber
+        int endRange = 101; 
+        int secretNumber = 0;
+        int playerNumber = 66;
         while (secretNumber != playerNumber) {
             secretNumber = (int)(Math.random() * endRange);
             if (secretNumber > playerNumber) {

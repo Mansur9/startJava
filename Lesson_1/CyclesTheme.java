@@ -13,7 +13,7 @@ public class CyclesTheme {
             }
             startRange++;
         } while (startRange <= endRange);
-        System.out.println("Сумма четных = " +sumEvenNumber);
+        System.out.println("Сумма четных = " + sumEvenNumber);
         System.out.println("Сумма нечетных = " + sumOddNumber);
 
         System.out.println("\nВывод чисел в интервале (min и max) в порядке убывания");
@@ -43,9 +43,8 @@ public class CyclesTheme {
         for (int i = --max; i > min; i--) {
             System.out.print(i);
         }
-        System.out.println();
 
-        System.out.println("\nВывод реверсивного числа и суммы его цифр");
+        System.out.println("\n" + "\nВывод реверсивного числа и суммы его цифр");
         // дано число 1234
         // в цикле while выделите каждую его цифру
         // подсчитайте сумму полученных цифр
