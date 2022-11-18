@@ -17,12 +17,6 @@ public class CyclesTheme {
         System.out.println("Сумма нечетных = " + sumOddNumber);
 
         System.out.println("\nВывод чисел в интервале (min и max) в порядке убывания");
-        // Вывод чисел в интервале (min и max) в порядке убывания
-        // даны значения 10, 5, -1
-        // найдите среди них max и min число
-        // отобразите в консоль в одну строку, с помощью for, все числа в интервале (min, max) в порядке убывания
-        // обратите внимание, что интервал — математический
-        // использовать методы max и min класса Math — нельзя
         int a = 10;
         int b = 5;
         int c = -1;
@@ -45,22 +39,16 @@ public class CyclesTheme {
         }
 
         System.out.println("\n" + "\nВывод реверсивного числа и суммы его цифр");
-        // дано число 1234
-        // в цикле while выделите каждую его цифру
-        // подсчитайте сумму полученных цифр
-        // отобразите в консоли:
-        // исходное число в обратном порядке
-        // сумму его цифр
         int srcNumber = 1234;
-        int sumNumber = 0;
-        int digit = 0;
+        int sumDigits = 0; //sumNumber назови sumDigits
+        // int digit = 0;
         while (srcNumber > 0) {
-            digit = srcNumber % 10;
+            int digit = srcNumber % 10;
             System.out.print(digit);
-            sumNumber += digit;
+            sumDigits += digit;
             srcNumber /= 10;
         }
-        System.out.println("\nSum of digits of given number: " + sumNumber);
+        System.out.println("\nSum of digits of given number: " + sumDigits);
 
         System.out.println("\nВывод чисел на консоль в несколько строк");
         int countInRow = 0;
@@ -78,30 +66,27 @@ public class CyclesTheme {
                 countInRow++;
             }
         }
-        System.out.println();
 
-        System.out.println("\nПроверка количества единиц на четность");
-        int srcNumberSecond = 3242592;
-        int digitsCount = 1;
-        int contNumbfirst = 0;
+        System.out.println("\n" + "\nПроверка количества единиц на четность");
+        srcNumber = 3242592; // вместо srcNumberSecond используй ранее созданную переменную srcNumber
+        int digitsRemainder = 1;
+        int SaveDigitSrcNumber = 1;
+        int counter = 0;
         int countNumberSecond = 1;
-        int countNumbThirdth = 0;
-        while (digitsCount > 0 ) {
-            contNumbfirst++;
-            digitsCount = (srcNumberSecond / countNumberSecond) % 10;
-            if (digitsCount == 2) {
-                countNumbThirdth++;
-            }
+        while (digitsRemainder > 0 ) {
+            digitsRemainder = srcNumber / countNumberSecond % 10;
             countNumberSecond *= 10;
+            if (digitsRemainder == 2) {
+                counter++;
+            }
         }
-        if (countNumbThirdth % 2 == 0) {
-            System.out.println("число X содержит " + countNumbThirdth + " - четное количество единиц");
+        if (digitsRemainder % 2 == 0) {
+            System.out.println("число " + srcNumber + " содержит " + counter + " - четное количество двоек");
         } else {
-            System.out.println("число X содержит " + countNumbThirdth + " - нечетное количество единиц");
-        }
-        System.out.println();
+            System.out.println("число " + srcNumber + " содержит " + counter + " - нечетное количество двоек");
+            }
 
-        System.out.println("\nОтображение фигур в консоли");
+        System.out.println("\n" + "\nОтображение фигур в консоли");
         int i = 0;
         int j = 1;
         int k = 0;
