@@ -3,11 +3,11 @@ public class WolfTest{
 // реализуйте методы: идти, сидеть, бежать, выть, охотиться
 // в каждом методе выводите сообщение вида: "Воет", "Сидит" и тд
 
-String floor;   //= "мужской";
-String name;    // = "Akela";
-double weight;  // = 54.2;
-int age;        // = 7;
-String colour;  // = "white";
+String floor;
+String name;   
+double weight; 
+int age;  
+String colour;
 
 String go() {
     System.out.println("He goes");
