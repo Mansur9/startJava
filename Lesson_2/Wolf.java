@@ -1,28 +1,31 @@
-public class WolfTest{
-    
-String floor;
+public class Wolf {
+
+String gender;
 String name;   
 double weight; 
 int age;  
 String colour;
 
-String go() {
+void go() {
     System.out.println("He goes");
     }
 
-String sit() {
+void sit() {
     System.out.println("He sits");
     }
 
-String run() {
+void run() {
     System.out.println("He runs");
     }
 
-String howl() {
+void howl() {
     System.out.println("He howls");
     }
 
-String hunt() {
+void hunt() {
     System.out.println("He hunts prey");
+    }
+String speak() {
+        return "Hello, world";
     }
 }
