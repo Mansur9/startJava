@@ -1,18 +1,29 @@
-public class WolfTest{
+public class WolfTest {
     public static void main(String[] args) {
-        Wolf wolfFirst = new Wolf();
-        wolfFirst.gender = "man";
-        wolfFirst.name = "Akela";
-        wolfFirst.weight = 55;
-        wolfFirst.age = 7;
-        wolfFirst.colour = "Black";
+        Wolf wolf = new Wolf();
         
-        System.out.println("This wolf is " + wolfFirst.gender + ", his name is " + wolfFirst.name + ", he has a weight = " + wolfFirst.weight + ", age = " + wolfFirst.age + ", colour = " + wolfFirst.colour);
-        wolfFirst.go();
-        wolfFirst.sit();
-        wolfFirst.run();
-        wolfFirst.howl();
-        wolfFirst.hunt();
-        System.out.println(wolfFirst.speak());
+        String gender = wolf.setGender("man");
+        String genderGet = wolf.getGender();
+        System.out.println("genderGet = " + genderGet);
+        
+        String name = wolf.setName("Akela");
+        String nameGet = wolf.getName();
+        System.out.println("nameGet = " + nameGet);
+
+        double weight = wolf.setWeight(55);
+        double weightget = wolf.getWeight();
+        System.out.println("weightget = " + weightget);
+        
+        int age = wolf.setAge(7);
+        int ageGet = wolf.getAge();
+        System.out.println("ageGet = " + ageGet);
+        
+        String colour = wolf.setColour("black");
+        String colourGet = wolf.getColour();
+        System.out.println("colourGet = " + colourGet);
+
+        String go = wolf.setGo("He goes to park");
+        String goGet = wolf.getGo();
+        System.out.println("goGet = " + goGet);
     }
 }

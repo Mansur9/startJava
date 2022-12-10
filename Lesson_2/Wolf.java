@@ -1,31 +1,66 @@
 public class Wolf {
 
-String gender;
-String name;   
-double weight; 
-int age;  
-String colour;
-
-void go() {
-    System.out.println("He goes");
+    private String gender;
+    private String name;   
+    private double weight; 
+    private int age;  
+    private String colour;
+    private String go;
+    
+    public String setGender(String gender) {
+        this.gender = gender;
+        return gender;
     }
 
-void sit() {
-    System.out.println("He sits");
+    public String getGender() {
+        return gender;
     }
 
-void run() {
-    System.out.println("He runs");
+    public String setName(String name) {
+        this.name = name;
+        return name;
     }
 
-void howl() {
-    System.out.println("He howls");
+    public String getName() {
+        return name;
     }
 
-void hunt() {
-    System.out.println("He hunts prey");
+    public double setWeight(double weight) {
+        this.weight = weight;
+        return weight;
     }
-String speak() {
-        return "Hello, world";
+
+    public double getWeight() {
+        return weight;
     }
+
+    public int setAge(int age) {
+        if (age > 8) {
+            System.out.println("Некорректный возраст");
+        } else {
+            this.age = age;
+            }
+        return age;
+        }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String setColour(String colour) {
+        this.colour = colour;
+        return colour;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public String setGo(String go) {
+        this.go = go;
+        return go;
+    }
+     public String getGo() {
+        return go;
+    }    
 }
