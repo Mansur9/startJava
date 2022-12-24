@@ -11,7 +11,7 @@ public class Calculator {
         operation = sign;
         result = result;
         
-        switch (operation){
+        switch (operation) {
             case '+':
                 result = num1 + num2;
                 break;
@@ -35,7 +35,7 @@ public class Calculator {
         answer = qwestion;
         if (answer == "yes") {
             System.out.println("Continue");
-        } else if (answer == "not"){
+        } else if (answer == "not") {
             System.out.println("Bay Bay");
         } else {
             System.out.println("Нет такого варианта");
