@@ -26,8 +26,9 @@ public class Calculator {
             case '%':
                 result = num1 % num2;
             case '^':
-                for (int i = 1; i <= num2; i++)
-                result *= num1;
+                for (int i = 1; i <= num2; i++) {
+                    result *= num1;
+                }
             default:
                 System.out.println("Операция не распознана. Повторите ввод.");
                 break;
