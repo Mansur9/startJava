@@ -7,7 +7,7 @@ public class CalculatorTest {
         int b;;
         char sign;
         int result = 1;
-        int qwestion;
+
         Scanner sc = new Scanner(System.in);
         do {
             System.out.println("Введите число - a:");

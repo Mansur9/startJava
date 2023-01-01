@@ -3,7 +3,6 @@ public class Calculator {
     private int num2; 
     private char operation;
     private int result;
-    private int answer;
     
     public Calculator(int a,  int b, char sign, int result) {
         this.num1 = a;        
@@ -34,6 +33,5 @@ public class Calculator {
                 break;
         }
         System.out.println("Результат операции: " + result);
-
     }
 }
