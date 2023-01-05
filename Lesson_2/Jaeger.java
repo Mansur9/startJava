@@ -1,10 +1,11 @@
 public class Jaeger {
     private String model;
-    private String name;   
-    private double weight; 
-    private int age;  
-    private String colour;
-    private String go;
+    private String mark;
+    private float height;   
+    private float weight; 
+    private int Speed;  
+    private int strength;
+    private int amor;
     
     public String setModel(String model) {
         this.model = model;
@@ -12,16 +13,39 @@ public class Jaeger {
     }
 
     public String getModel() {
-        return gender;
+        return model;
     }
 
-    public String setName(String name) {
-        this.name = name;
-        return name;
+    public String setMark(String mark) {
+        this.mark = mark;
+        return mark;
     }
 
-    public String getName() {
-        return name;
+    // public String getMark() {
+    //     return Mark;
+    // }
+
+    public float setHeight(float height) {
+        this.height = height;
+        return height;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    // public float setWeight() {
+    //     this.
+    //     return weight;
+    // }
+
+    public void move() {
+        System.out.println("moving");
+    }
+
+
+    public void drift() {
+        System.out.println("drift");
     }
 
 }
