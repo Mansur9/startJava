@@ -98,4 +98,12 @@ public class Jaeger {
         System.out.println("drift");
     }
 
+    public void jump() {
+        System.out.println("jump");
+    }
+
+    public void attack() {
+        System.out.println("attac");
+    }
+
 }

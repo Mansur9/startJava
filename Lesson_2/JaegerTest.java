@@ -13,10 +13,16 @@ public class JaegerTest {
         robot1.getHeight();
         robot1.setWeight(1.850f);
         robot1.setSpeed(10);
-        robot1.setStrength(15);
-        robot1.setArmor(7);
+        robot1.setStrength(10);
+        robot1.setArmor(9);
 
-        Jaeger robot2 = new Jaeger("Khal","Mark-2",77,2,11,16,7);
-        System.out.println("модель " + robot2.getMark());
+        Jaeger robot2 = new Jaeger("Khal Drog","Mark-2",77,2,11,16,7);
+        System.out.println("Robot2 is model - " + robot2.getModel());
+        System.out.println("Robot1 has:");
+        robot1.move();
+        robot1.attack();
+        System.out.println("Robot2 has:");
+        robot2.drift();
+        robot2.jump();
     }
 }
