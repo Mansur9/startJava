@@ -6,8 +6,35 @@ public class Jaeger {
     private float weight; 
     private int speed;  
     private int strength;
-    private int amor;
+    private int armor;
     
+    public Jaeger() {
+    }
+
+    // public Jaeger(String model, String mark) {
+    //     this(model, mark, 70.0f, 7.640f, 8, 4, 6);
+    // }
+
+     // public Jaeger(String model, String mark) {
+    //     this.model = model;
+    //     this.mark = mark;
+    //     this.height = 70.0f;
+    //     this.weight = 7.640f;
+    //     this.speed = 8;
+    //     this.strength = 4;
+    //     this.armor = 6;
+    // }
+
+    public Jaeger(String model, String mark, float height, float weight, int speed, int strength, int armor) {
+        this.model = model;
+        this.mark = mark;
+        this.height = height;
+        this.weight = weight;
+        this.speed = speed;
+        this.strength = strength;
+        this.armor = armor;
+    }
+
     public void setModel(String model) {
         this.model = model;
     }
@@ -56,11 +83,11 @@ public class Jaeger {
         return strength;
     }
 
-    public void setAmor(int amor) {
-        this.amor = amor;
+    public void setArmor(int amor) {
+        this.armor = armor;
     }
-    public int getAmor() {
-        return amor;
+    public int getArmor() {
+        return armor;
     }
 
     public void move() {

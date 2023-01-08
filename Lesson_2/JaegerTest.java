@@ -8,15 +8,15 @@ public class JaegerTest {
         robot1.getModel();
         robot1.setMark("Mark-5");
         robot1.getMark();
+        System.out.println(robot1.getMark());
         robot1.setHeight(76.2f);
         robot1.getHeight();
         robot1.setWeight(1.850f);
         robot1.setSpeed(10);
         robot1.setStrength(15);
-        robot1.setAmor(7);
+        robot1.setArmor(7);
 
-        Jaeger robot2 = new Jaeger();
-        robot2.setModel("Khal");
-        // System.out.println("модель" + robot2.setModel("Khal"));
+        Jaeger robot2 = new Jaeger("Khal","Mark-2",77,2,11,16,7);
+        System.out.println("модель " + robot2.getMark());
     }
 }
