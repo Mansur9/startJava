@@ -24,6 +24,5 @@ public class JaegerTest {
         System.out.println("Robot2 has method :");
         robot2.drift();
         robot2.jump();
-        
     }
 }
