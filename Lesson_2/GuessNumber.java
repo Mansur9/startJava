@@ -1,4 +1,6 @@
-public classs GuessNumber{
+import java.util.Scanner;
+
+public class GuessNumber {
     Scanner sc = new Scanner(System.in);
     int endRange = 101; 
     int secretNumber = 0;
