@@ -2,30 +2,29 @@ import java.util.Scanner;
 
 public class GuessNumberTest {
     public static void main(String[] args) {
-        System.out.println("Добро пожаловать в игру");
-        Scanner sc = new Scanner(System.in);
-        int endRange = 101; 
-        int secretNumber = 0;
-        System.out.println("Имя первого игрока:");
-        String playerOne = sc.nextLine();
-        System.out.println("Имя второго игрока:");
-        String playerTwo = sc.nextLine();
-        
-        int playerFirstNumb = sc.nextInt();
+        String player1;
+        String player2;
+        int number = 11;
 
-        while (playerFirstNumb != secretNumber) {
-            secretNumber = (int) (Math.random() * endRange);
-            if (playerFirstNumb > secretNumber) {
-                System.out.println(playerFirstNumb + " меньше того, что загадал компьютер - " + secretNumber);
-            } else if (playerFirstNumb < secretNumber) {
-                System.out.println(playerFirstNumb + " больше того, что загадал компьютер - " + secretNumber);
-            }
-        check(sc);    
+
+        Scanner sc = new Scanner(System.in);
+        
+        do {
+            System.out.println("Добро пожаловать в игру");
+            System.out.println("Первый игрок");
+            player1 = sc.nextLine();
+            System.out.println("Второй игрок");
+            player2 = sc.nextLine();
+            GuessNumber GuessNumber = new GuessNumber(player1,player2);
+            number = sc.nextInt();
+
+        } while (number == 1); {
+            System.out.println("Выключение.");
         }
     }
     private static boolean check(Scanner sc) {
         while (true) {
-        switch (sc.nextLine().trim().toLowerCase()) {
+         switch (sc.nextLine().trim().toLowerCase()) {
                 case "yes":
                     return true;
                 case "no":
