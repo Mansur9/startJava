@@ -3,32 +3,49 @@ import java.util.Scanner;
 public class GuessNumber {
 
     private int secretNumber;
-    private String player1;
-    private String player2;
+    private Player player1;
+    private Player player2;
 
-    GuessNumber(String player1, String player2) {
+    GuessNumber(Player player1, Player player2) {
         this.player1 = player1;
         this.player2 = player2;
     }
 
-    public String getplayer1() {
-        return player1;
+    public void start(Scanner sc) {
+        generateNumb();
+        Player activePlayer = player1;
+        System.out.println("Generation number ... \nNumber is creat! Good luck!");
+        System.out.println("\n" + activePlayer.getName() + ", введите число:");
+        if (inputNumber(sc, activePlayer)) {
+            if(chechNumber(activePlayer) == true) {
+                System.out.println("Ваше число принято");
+            }
+            else if(activePlayer == player1) {
+                activePlayer = player2;
+            }
+            else activePlayer = player2;
+        }
     }
-
-    public String getplayer2() {
-        return player2;
-    }
-    
-    // while (playerSecond != secretNumber) {
-    //     secretNumber = (int) (Math.random() * endRange);
-    //     if (playerSecond > secretNumber) {
-    //         System.out.println(playerSecond + " меньше того, что загадал компьютер - " + secretNumber);
-    //     } else if (playerSecond < secretNumber) {
-    //         System.out.println(playerSecond + " больше того, что загадал компьютер - " + secretNumber);
-    //     }
-    // }
 
     private void generateNumb() {
         secretNumber = (int) (Math.random() * 101);
+    }
+
+    private boolean inputNumber(Scanner sc, Player player) {
+        int num = sc.nextInt();
+        return player1.setNumber(num);
+    }
+
+    private boolean chechNumber(Player player) {
+        if (player.getNumber() != secretNumber) {
+            if (player.getNumber() > secretNumber) {
+                System.out.println(player.getName() + " больше - " + secretNumber);
+                return false;
+            } else if (player.getNumber() < secretNumber) {
+                System.out.println(player.getName() + " меньше - " + secretNumber);
+                return false;
+            }
+        }
+        return true;
     }
 }
