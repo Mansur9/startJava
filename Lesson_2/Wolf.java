@@ -31,7 +31,7 @@ public class Wolf {
         return weight;
     }
 
-    public void setChangeAge(int age) {
+    public void setAge(int age) {
         if (age > 8) {
             System.out.println("Некорректный возраст");
         } else {
@@ -54,7 +54,8 @@ public class Wolf {
     public void setMovement(String move) {
         this.movement = movement;
     }
-     public String getMovement() {
+    
+    public String getMovement() {
         return movement;
     }    
 }

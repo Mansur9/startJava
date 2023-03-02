@@ -19,7 +19,7 @@ public class JaegerTest {
         robot1.move();
         robot1.attack();
         System.out.println("Robot2 has method :");
-        robot2.drift();
+        robot2.drift(); 
         robot2.jump();
     }
 }

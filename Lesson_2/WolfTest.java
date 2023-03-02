@@ -11,7 +11,7 @@ public class WolfTest {
         wolf.setWeight(55);
         System.out.println("weight = " + wolf.getWeight());
         
-        wolf.setChangeAge(7);
+        wolf.setAge(7);
         System.out.println("age = " + wolf.getAge());
         
         wolf.setColour("black");

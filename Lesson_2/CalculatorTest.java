@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class CalculatorTest {
     public static void main(String[] args) {
-    
         int a;
         int b;;
         char sign;
@@ -21,9 +20,10 @@ public class CalculatorTest {
             System.out.println("Выключение.");
         }
     }
+
     private static boolean check(Scanner sc) {
         while (true) {
-         switch (sc.nextLine().trim().toLowerCase()) {
+            switch (sc.nextLine().trim().toLowerCase()) {
                 case "yes":
                     return true;
                 case "no":

@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class GuessNumber {
-
     private int secretNumber;
     private String player1;
     private String player2;
@@ -11,6 +10,7 @@ public class GuessNumber {
         this.player1 = player1;
         this.player2 = player2;
     }
+
     public String getPlayer1() {
         return player1;
     }
@@ -24,9 +24,9 @@ public class GuessNumber {
         String activePlayer = player1;
         System.out.println("Generation number ... \nNumber is creat! Good luck!");
         System.out.println("\n" + getPlayer1() + ", введите число:");
-        
         System.out.println(num);
     }
+
     private void generateNumb() {
         secretNumber = (int) (Math.random() * 101);
     }
@@ -35,6 +35,7 @@ public class GuessNumber {
         int num = sc.nextInt();
         return player1.setNumber(num);
     }
+
     public boolean setNumber(int number) {
         this.number = number;
         if (number < 0 || number > 100) {
@@ -43,5 +44,4 @@ public class GuessNumber {
             return true;
         }
     }
-
 }
