@@ -4,7 +4,7 @@ public class WolfTest {
         
         wolf.setGender("man");
         System.out.println("gender = " + wolf.getGender());
-        
+    
         wolf.setName("Akela");
         System.out.println("name = " + wolf.getName());
 
