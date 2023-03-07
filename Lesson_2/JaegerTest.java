@@ -1,6 +1,5 @@
 public class JaegerTest {
     public static void main(String[] args) {
-        
         Jaeger robot1 = new Jaeger();
         robot1.setModel("Striker Eureka");
         robot1.setMark("Mark-5");

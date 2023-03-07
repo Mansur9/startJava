@@ -9,7 +9,11 @@ public class Calculator {
         this.num2 = b;
         this.operation = sign;
         this.result = result;
+        doCalc(num1, num2, operation, result);
         
+    }
+    
+    private void doCalc(int a,  int b, char sign, int result) {
         switch (operation) {
             case '+':
                 result = num1 + num2;
@@ -33,6 +37,6 @@ public class Calculator {
                 System.out.println("Операция не распознана. Повторите ввод.");
                 break;
         }
-        System.out.println("Результат операции: " + result);
+        System.out.println("Результат операции: " + result);     
     }
 }
