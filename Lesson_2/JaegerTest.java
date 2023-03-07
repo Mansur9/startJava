@@ -3,11 +3,8 @@ public class JaegerTest {
         
         Jaeger robot1 = new Jaeger();
         robot1.setModel("Striker Eureka");
-        robot1.getModel();
         robot1.setMark("Mark-5");
-        robot1.getMark();
         robot1.setHeight(76.2f);
-        robot1.getHeight();
         robot1.setWeight(1.850f);
         robot1.setSpeed(10);
         robot1.setStrength(10);
