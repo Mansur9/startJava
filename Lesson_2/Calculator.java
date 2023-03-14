@@ -4,16 +4,12 @@ public class Calculator {
     private char operation;
     private int result;
     
-    public Calculator(int a,  int b, char sign, int result) {
+    
+    public void doCalc(int a,  int b, char sign) {
         this.num1 = a;        
         this.num2 = b;
         this.operation = sign;
         this.result = result;
-        doCalc(num1, num2, operation, result);
-        
-    }
-    
-    private void doCalc(int a,  int b, char sign, int result) {
         switch (operation) {
             case '+':
                 result = num1 + num2;
