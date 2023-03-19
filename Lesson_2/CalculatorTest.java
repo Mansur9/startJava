@@ -2,11 +2,9 @@ import java.util.Scanner;
 
 public class CalculatorTest {
     public static void main(String[] args) {
-    
         int a;
         int b;;
         char sign;
-        int result = 1;
 
         Scanner sc = new Scanner(System.in);
         do {
@@ -16,15 +14,16 @@ public class CalculatorTest {
             b = sc.nextInt();
             System.out.println("Введите знак - sign:");
             sign = sc.next().charAt(0);
-            Calculator calculator = new Calculator(a,b,sign,result);
-            check(sc);
-        } while (check(sc)); {
-            System.out.println("Выключение.");
+            Calculator calculator = new Calculator();
+            calculator.doCalc(a,b,sign);
+        } while (isNext(sc)); {
+            System.out.println("Получени ответ - no, Выключение.");
         }
     }
-    private static boolean check(Scanner sc) {
+
+    private static boolean isNext(Scanner sc) {
         while (true) {
-         switch (sc.nextLine().trim().toLowerCase()) {
+            switch (sc.nextLine().trim().toLowerCase()) {
                 case "yes":
                     return true;
                 case "no":

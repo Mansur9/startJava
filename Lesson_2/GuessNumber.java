@@ -1,51 +1,47 @@
 import java.util.Scanner;
 
 public class GuessNumber {
-
     private int secretNumber;
-    private Player player1;
-    private Player player2;
+    private String player1;
+    private String player2;
+    int number;
 
-    GuessNumber(Player player1, Player player2) {
+    GuessNumber(String player1, String player2) {
         this.player1 = player1;
         this.player2 = player2;
     }
 
+    public String getPlayer1() {
+        return player1;
+    }
+
+    public String getPlayer2() {
+        return player2;
+    }
+
     public void start(Scanner sc) {
         generateNumb();
-        Player activePlayer = player1;
+        String activePlayer = player1;
         System.out.println("Generation number ... \nNumber is creat! Good luck!");
-        System.out.println("\n" + activePlayer.getName() + ", введите число:");
-        if (inputNumber(sc, activePlayer)) {
-            if(chechNumber(activePlayer) == true) {
-                System.out.println("Ваше число принято");
-            }
-            else if(activePlayer == player1) {
-                activePlayer = player2;
-            }
-            else activePlayer = player2;
-        }
+        System.out.println("\n" + getPlayer1() + ", введите число:");
+        System.out.println(num);
     }
 
     private void generateNumb() {
         secretNumber = (int) (Math.random() * 101);
     }
 
-    private boolean inputNumber(Scanner sc, Player player) {
+    private boolean inputNumber(Scanner sc, String player1) {
         int num = sc.nextInt();
         return player1.setNumber(num);
     }
 
-    private boolean chechNumber(Player player) {
-        if (player.getNumber() != secretNumber) {
-            if (player.getNumber() > secretNumber) {
-                System.out.println(player.getName() + " больше - " + secretNumber);
-                return false;
-            } else if (player.getNumber() < secretNumber) {
-                System.out.println(player.getName() + " меньше - " + secretNumber);
-                return false;
-            }
+    public boolean setNumber(int number) {
+        this.number = number;
+        if (number < 0 || number > 100) {
+            return false;
+        } else {
+            return true;
         }
-        return true;
     }
 }

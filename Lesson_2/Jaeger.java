@@ -11,20 +11,6 @@ public class Jaeger {
     public Jaeger() {
     }
 
-    // public Jaeger(String model, String mark) {
-    //     this(model, mark, 70.0f, 7.640f, 8, 4, 6);
-    // }
-
-     // public Jaeger(String model, String mark) {
-    //     this.model = model;
-    //     this.mark = mark;
-    //     this.height = 70.0f;
-    //     this.weight = 7.640f;
-    //     this.speed = 8;
-    //     this.strength = 4;
-    //     this.armor = 6;
-    // }
-
     public Jaeger(String model, String mark, float height, float weight, int speed, int strength, int armor) {
         this.model = model;
         this.mark = mark;
@@ -105,5 +91,4 @@ public class Jaeger {
     public void attack() {
         System.out.println("attac");
     }
-
 }

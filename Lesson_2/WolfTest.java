@@ -3,27 +3,21 @@ public class WolfTest {
         Wolf wolf = new Wolf();
         
         wolf.setGender("man");
-        String genderGet = wolf.getGender();
-        System.out.println("genderGet = " + genderGet);
-        
+        System.out.println("gender = " + wolf.getGender());
+    
         wolf.setName("Akela");
-        String nameGet = wolf.getName();
-        System.out.println("nameGet = " + nameGet);
+        System.out.println("name = " + wolf.getName());
 
         wolf.setWeight(55);
-        double weightget = wolf.getWeight();
-        System.out.println("weightget = " + weightget);
+        System.out.println("weight = " + wolf.getWeight());
         
         wolf.setAge(7);
-        int ageGet = wolf.getAge();
-        System.out.println("ageGet = " + ageGet);
+        System.out.println("age = " + wolf.getAge());
         
         wolf.setColour("black");
-        String colourGet = wolf.getColour();
-        System.out.println("colourGet = " + colourGet);
+        System.out.println("colour = " + wolf.getColour());
 
-        wolf.setGo("He goes to park");
-        String goGet = wolf.getGo();
-        System.out.println("goGet = " + goGet);
+        wolf.setMovement("movement");
+        System.out.println("movement = " + wolf.getMovement());
     }
 }

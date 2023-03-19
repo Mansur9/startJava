@@ -1,16 +1,9 @@
-import javax.annotation.processing.SupportedOptions;
-
 public class JaegerTest {
     public static void main(String[] args) {
-        
         Jaeger robot1 = new Jaeger();
         robot1.setModel("Striker Eureka");
-        robot1.getModel();
         robot1.setMark("Mark-5");
-        robot1.getMark();
-        System.out.println(robot1.getMark());
         robot1.setHeight(76.2f);
-        robot1.getHeight();
         robot1.setWeight(1.850f);
         robot1.setSpeed(10);
         robot1.setStrength(10);
@@ -22,7 +15,7 @@ public class JaegerTest {
         robot1.move();
         robot1.attack();
         System.out.println("Robot2 has method :");
-        robot2.drift();
+        robot2.drift(); 
         robot2.jump();
     }
 }

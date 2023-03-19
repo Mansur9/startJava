@@ -5,7 +5,7 @@ public class Wolf {
     private double weight; 
     private int age;  
     private String colour;
-    private String go;
+    private String movement;
     
     public void setGender(String gender) {
         this.gender = gender;
@@ -51,10 +51,11 @@ public class Wolf {
         return colour;
     }
 
-    public void setGo(String go) {
-        this.go = go;
+    public void setMovement(String move) {
+        this.movement = movement;
     }
-     public String getGo() {
-        return go;
+    
+    public String getMovement() {
+        return movement;
     }    
 }
