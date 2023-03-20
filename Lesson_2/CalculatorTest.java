@@ -17,19 +17,19 @@ public class CalculatorTest {
             Calculator calculator = new Calculator();
             calculator.doCalc(a,b,sign);
         } while (isNext(sc)); {
-            System.out.println("Получени ответ - no, Выключение.");
+            System.out.println("Получени ответ - no, Выключение программы.");
         }
     }
 
-    private static boolean isNext(Scanner sc) {
+     private static boolean isNext(Scanner sc) {
+        System.out.println("допустимые варианты только YES или NO!");
+        sc.nextLine().trim().toLowerCase();
         while (true) {
-            switch (sc.nextLine().trim().toLowerCase()) {
-                case "yes":
-                    return true;
-                case "no":
-                    return false;
-                default:
-                    System.out.println("Ошибка: допустимые варианты только YES или NO!");
+            String answer = sc.nextLine().trim().toLowerCase();
+            if (answer.equals("no")) {
+                return false;
+            } else {
+                return true;
             }
         }
     }
