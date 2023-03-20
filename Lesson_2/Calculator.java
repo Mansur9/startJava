@@ -4,30 +4,25 @@ public class Calculator {
     private char operation;
     private int result;
     
-    
-    public void doCalc(int a,  int b, char sign) {
-        this.num1 = a;        
-        this.num2 = b;
-        this.operation = sign;
-        this.result = result;
-        switch (operation) {
+    public void calculate(int a,  int b, char sign) {
+        switch (sign) {
             case '+':
-                result = num1 + num2;
+                result = a + b;
                 break;
             case '-':
-                result = num1 - num2;
+                result = a - b;
                 break;
             case '*':
-                result = num1 * num2;
+                result = a * b;
                 break;
             case '/':
-                result = num1 / num2;
+                result = a / b;
                 break;
             case '%':
-                result = num1 % num2;
+                result = a % b;
             case '^':
-                for (int i = 1; i <= num2; i++) {
-                    result *= num1;
+                for (int i = 1; i <= b; i++) {
+                    result *= a;
                 }
             default:
                 System.out.println("Операция не распознана. Повторите ввод.");

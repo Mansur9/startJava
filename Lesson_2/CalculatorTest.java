@@ -15,7 +15,7 @@ public class CalculatorTest {
             System.out.println("Введите знак - sign:");
             sign = sc.next().charAt(0);
             Calculator calculator = new Calculator();
-            calculator.doCalc(a,b,sign);
+            calculator.calculate(a,b,sign);
         } while (isNext(sc)); {
             System.out.println("Получени ответ - no, Выключение программы.");
         }
