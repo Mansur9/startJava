@@ -5,7 +5,7 @@ public class Calculator {
     private int result;
     
     
-    public void doCalc(int a,  int b, char sign) {
+    public void calculate(int a,  int b, char sign) {
         this.num1 = a;        
         this.num2 = b;
         this.operation = sign;
