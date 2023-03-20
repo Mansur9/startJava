@@ -2,26 +2,21 @@ import java.util.Scanner;
 
 public class CalculatorTest {
     public static void main(String[] args) {
-        int a;
-        int b;;
-        char sign;
-
         Scanner sc = new Scanner(System.in);
         do {
             System.out.println("Введите число - a:");
-            a = sc.nextInt();
+            int a = sc.nextInt();
             System.out.println("Введите число - b:");
-            b = sc.nextInt();
+            int b = sc.nextInt();
             System.out.println("Введите знак - sign:");
-            sign = sc.next().charAt(0);
+            char sign = sc.next().charAt(0);
             Calculator calculator = new Calculator();
             calculator.calculate(a,b,sign);
-        } while (isNext(sc)); {
+        } while (isNext(sc));
             System.out.println("Получени ответ - no, Выключение программы.");
-        }
     }
 
-     private static boolean isNext(Scanner sc) {
+    private static boolean isNext(Scanner sc) {
         System.out.println("допустимые варианты только YES или NO!");
         sc.nextLine().trim().toLowerCase();
         while (true) {
