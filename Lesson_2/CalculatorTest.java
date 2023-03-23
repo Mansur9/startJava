@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class CalculatorTest {
     public static void main(String[] args) {
+        String input;
         Scanner sc = new Scanner(System.in);
         do {
             System.out.println("Введите число - a:");
@@ -12,20 +13,10 @@ public class CalculatorTest {
             char sign = sc.next().charAt(0);
             Calculator calculator = new Calculator();
             calculator.calculate(a,b,sign);
-        } while (isNext(sc));
-            System.out.println("Получени ответ - no, Выключение программы.");
-    }
-
-    private static boolean isNext(Scanner sc) {
-        System.out.println("допустимые варианты только YES или NO!");
-        sc.nextLine().trim().toLowerCase();
-        while (true) {
-            String answer = sc.nextLine().trim().toLowerCase();
-            if (answer.equals("no")) {
-                return false;
-            } else {
-                return true;
-            }
-        }
+            System.out.println("повторим?");
+            System.out.println("допустимые варианты только [yes/no]!");
+            input = sc.next().toUpperCase();
+        } while (input.equalsIgnoreCase("yes"));
+            System.out.println("программа завершилась");    
     }
 }
