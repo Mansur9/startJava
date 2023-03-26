@@ -16,6 +16,9 @@ public class CalculatorTest {
             System.out.println("повторим?");
             System.out.println("допустимые варианты только [yes/no]!");
             input = sc.next().toUpperCase();
+            if (!(input.equalsIgnoreCase("yes") || (input.equalsIgnoreCase("no")))) {
+                System.out.println("bla bla bla" + "\n" + "Ошибка: допустимые варианты только [yes/no]!");
+            }
         } while (input.equalsIgnoreCase("yes"));
             System.out.println("программа завершилась");    
     }

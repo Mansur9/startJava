@@ -15,11 +15,9 @@ public class Player {
     }
 
     public boolean setNumber(int number) {
-        this.number = number;
         if (number < 0 || number > 100) {
+            this.number = number;
             return false;
-        } else {
-            return true;
         }
     }
  }
