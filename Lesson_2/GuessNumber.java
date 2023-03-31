@@ -24,17 +24,18 @@ public class GuessNumber {
         String activePlayer = player1;
         System.out.println("Generation number ... \nNumber is creat! Good luck!");
         System.out.println("\n" + getPlayer1() + ", введите число:");
-        System.out.println(num);
+        System.out.println(number);
     }
 
     private void generateNumb() {
         secretNumber = (int) (Math.random() * 101);
     }
 
-    private boolean inputNumber(Scanner sc, String player1) {
-        int num = sc.nextInt();
-        return player1.setNumber(num);
-    }
+//    private boolean inputNumber(Scanner sc, int player1) {
+//        int num = sc.nextInt();
+////        return player1.setNumber(number);
+//        return true;
+//    }
 
     public boolean setNumber(int number) {
         this.number = number;

@@ -17,7 +17,7 @@ public class GuessNumberTest {
             player2 = sc.nextLine();
             GuessNumber GuessNumber = new GuessNumber(player1,player2);
             GuessNumber.start(sc);
-        } while (number == 1); {
+        } while (check(sc)); {
             System.out.println("Выключение.");
         }
     }
