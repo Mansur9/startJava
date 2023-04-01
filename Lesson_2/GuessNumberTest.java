@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class GuessNumberTest {
     public static void main(String[] args) {
-        String player1;
-        String player2;
         int number = 11;
 
 
@@ -12,12 +10,12 @@ public class GuessNumberTest {
         do {
             System.out.println("Добро пожаловать в игру");
             System.out.println("Первый игрок - укажите имя :");
-            player1 = sc.nextLine();
+            Player player1 = new Player(sc.nextLine());
             System.out.println("Второй игрок - укажите имя :");
-            player2 = sc.nextLine();
+            Player player2 = new Player(sc.nextLine());
             GuessNumber GuessNumber = new GuessNumber(player1,player2);
             GuessNumber.start(sc);
-        } while (number == 1); {
+        } while (check(sc)); {
             System.out.println("Выключение.");
         }
     }
