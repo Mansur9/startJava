@@ -2,9 +2,10 @@ public class Calculator {
     private int num1;
     private int num2; 
     private char operation;
-    private int result;
+    
     
     public void calculate(int a,  int b, char sign) {
+        int result = 0;
         switch (sign) {
             case '+':
                 result = a + b;
