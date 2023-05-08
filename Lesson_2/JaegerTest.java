@@ -9,7 +9,7 @@ public class JaegerTest {
         robot1.setStrength(10);
         robot1.setArmor(9);
 
-        Jaeger robot2 = new Jaeger("Khal Drog","Mark-2",77,2,11,16,7);
+        Jaeger robot2 = new Jaeger("Khal Drog", "Mark-2", 77, 2, 11, 16, 7);
         System.out.println("Robot2 is model - " + robot2.getModel());
         System.out.println("Robot1 has method:");
         robot1.move();
