@@ -1,67 +1,63 @@
 import java.util.Scanner;
 
-public class GuessNumber {
-    private int secretNumber;
-    private Player playerFirst;
-    private Player playerSecond;
-    private int number;
+class GuessNumber {
+    private int secretNum;
+    private Player player1;
+    private Player player2;
 
     GuessNumber(Player player1, Player player2) {
-        this.playerFirst = player1;
-        this.playerSecond = player2;
+        this.player1 = player1;
+        this.player2 = player2;
     }
 
-    public Player getPlayer1() {
-        return playerFirst;
-    }
-
-    public Player getPlayer2() {
-        return playerSecond;
-    }
-
-    public void start(Scanner sc) {
-        generateNumb();
-        System.out.println("Генерация числа... \nЧисло создалось, удачи!");
-        Player activePlayer = playerFirst;
-        System.out.println(playerFirst.getName());
-        System.out.println(", введите число:");
-        inputNumber(playerFirst,sc);
-        // compareNumber(player);
-        // int playerFirstNumb = sc.nextInt();
-        // while (playerFirstNumb != secretNumber) {
-        // if (playerFirstNumb > secretNumber) {
-        //     System.out.println(playerFirstNumb + " меньше того, что загадал компьютер - " + secretNumber);
-        // } else if (playerFirstNumb < secretNumber) {
-        //     System.out.println(playerFirstNumb + " больше того, что загадал компьютер - " + secretNumber);
-        // }
+    // игровой процесс:
+    public void start(Scanner scanner) {
+        generateSecretNum();
+        System.out.println("Генерация...\nЧИСЛО СОЗДАНО! УДАЧИ!");
         
+        //кладём сюда первого игрока, в цикле будем переключать.
+        Player activePlayer = player1;
+        while (true) {
+            System.out.println("\n" + activePlayer.getName() + ": Введите число!");
+
+            if (scanner.hasNextInt() && inputNumber(activePlayer, scanner)) {
+
+                //если метод вернул true игрок выиграл:
+                if(compareNums(activePlayer))
+                    break;
+
+                //если число не угадано, меняем игроков местами:
+                activePlayer = (activePlayer == player1) ? player2 : player1;
+                scanner.nextLine();
+                continue;
+            }
+
+            //если введено не число или число не входит в диапазон!
+            System.out.println("Поддерживаются только целые положительные числа 1 <-> 100");
+            scanner.nextLine(); 
+        }
+        scanner.nextLine();
     }
 
-    private boolean compareNumber(Player player1){
-        int test = player1.getNumber();
-        if(test != secretNumber){
-            System.out.println("bla_bla_bla");
+    private void generateSecretNum() {
+        secretNum = (int) (Math.random() * 100) + 1;
+    }
+
+    private static boolean inputNumber(Player player, Scanner scanner) {
+        int num = scanner.nextInt();
+        return (player.setNumber(num));
+    }
+
+    private boolean compareNums(Player player) {
+        //если число не угадано, определяем больше оно либо же меньше :
+        if (player.getNumber() != secretNum) {
+            String compare = (player.getNumber() < secretNum) ? "Ваше число меньше!" : "Ваше число больше!";
+            System.out.println(compare);
             return false;
         }
-        System.out.println("you win");
+
+        //Если число !< || !> то оно == secretNum:
+        System.out.println("\n" + player.getName() + ": ВЫИГРАЛ УГАДАВ ВЕРНОЕ ЧИСЛО = " + secretNum);
         return true;
     }
-
-    private static boolean inputNumber(Player player1, Scanner sc) {
-        int number = sc.nextInt();
-        return player1.setNumber(number);
-   }
-
-    private void generateNumb() {
-        secretNumber = (int) (Math.random() * 101);
-    }
-
-    public boolean setNumber(int number) {
-        this.number = number;
-        if (number < 0 || number > 100) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-}
+}   
