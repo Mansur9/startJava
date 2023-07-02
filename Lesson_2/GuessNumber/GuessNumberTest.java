@@ -9,12 +9,6 @@ public class GuessNumberTest {
         System.out.println("Второй игрок - укажите имя :");
         Player player2 = new Player(sc.next());
         GuessNumber GuessNumber = new GuessNumber(player1, player2);
-        System.out.println(GuessNumber.getPlayer1());
-        
-        // GuessNumber.start(sc);
-        // System.out.println("Повторим? - [yes/no]");
-        // check(sc);
-        System.out.println("Выключение.");
         
     }
     private static boolean check(Scanner sc) {
